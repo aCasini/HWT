@@ -1,0 +1,52 @@
+#c{
+    width:624px;
+    height:624px;
+    text-align: center;
+}
+
+body{
+/* 	background-color: black; */
+}
+
+#banner{
+/* 	background-image: url("../img/Background.jpg"); */
+	height: 60%;
+}
+
+#bgImage{
+	position: relative;
+}
+
+#ballonsImage{
+	position: relative;
+	margin-top: -36%;
+	margin-left: 20%;
+	text-align: center;
+	z-index: 3;
+}
+
+#item5{
+	position: relative;
+	margin-top: -36.2%;
+	margin-left: 0%;
+	text-align: center;
+	z-index: 3;
+}
+
+#item4{
+	position: relative;
+	margin-top: -35.2%;
+	margin-left: 5%;
+	text-align: center;
+	z-index: 4;
+}
+
+#balloons{
+/* 	background-image: url("../img/Balloons.png"); */
+	background-repeat:no-repeat;
+	/*background-attachment:fixed;*/
+	background-position:center; 	
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
