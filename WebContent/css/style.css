@@ -1,52 +1,64 @@
+/*
+	   style.css
+	   HWT
+			   Created by Kasoale on 2013-04-29.
+	   Copyright 2013 Alessio Casini. All rights reserved.
+	*/
 #c{
     width:624px;
     height:624px;
     text-align: center;
 }
 
-body{
-/* 	background-color: black; */
-}
-
-#banner{
-/* 	background-image: url("../img/Background.jpg"); */
-	height: 60%;
-}
-
 #bgImage{
-	position: relative;
+ 	background-image: url("../img/Background.jpg");
+ 	background-size: 100% 400px; 
+	height: 400px;
 }
 
-#ballonsImage{
-	position: relative;
-	margin-top: -36%;
-	margin-left: 20%;
-	text-align: center;
-	z-index: 3;
+#imgBallons{
+	background-image: url("../img/Balloons.png");
+	background-size: 400px 400px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	border: 0px;
 }
 
-#item5{
-	position: relative;
-	margin-top: -36.2%;
-	margin-left: 0%;
-	text-align: center;
-	z-index: 3;
+#imgLogo{
+	background-image: url("../img/Logo.png");
+	background-size: Auto 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-top: -300px;
+	border: 0px;
 }
 
-#item4{
-	position: relative;
-	margin-top: -35.2%;
-	margin-left: 5%;
-	text-align: center;
-	z-index: 4;
+#c1{
+	background-image: url("../img/Icone/Icon01.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: Auto 48px;
+	margin-top: -421px;
+	height: 100px;
+	border: 0px;
 }
 
-#balloons{
-/* 	background-image: url("../img/Balloons.png"); */
-	background-repeat:no-repeat;
-	/*background-attachment:fixed;*/
-	background-position:center; 	
-	position: absolute;
-	text-align: center;
-	z-index: 1;
+#item2{
+	background-image: url("../img/Icone/Icon02.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: Auto 48px;
+	height: 100px;
+	border: 2px;
+}
+
+#item2{
+	background-image: url("../img/Icone/Icon03.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: Auto 48px;
+	height: 100px;
+	border: 2px;
 }
