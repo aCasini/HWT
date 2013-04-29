@@ -49,16 +49,19 @@
 	background-image: url("../img/Icone/Icon02.png");
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: Auto 48px;
-	height: 100px;
+	background-size: Auto 40px;
+	height: 40px;
+	width: 40px;
+	margin-left: 36.7%;
+	margin-top: -70px;
 	border: 2px;
 }
 
-#item2{
+#item3{
 	background-image: url("../img/Icone/Icon03.png");
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: Auto 48px;
-	height: 100px;
+	background-size: Auto 58px;
+	height: 50px;
 	border: 2px;
 }
