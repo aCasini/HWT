@@ -4,6 +4,12 @@
 			   Created by Kasoale on 2013-04-29.
 	   Copyright 2013 Alessio Casini. All rights reserved.
 	*/
+body {
+	display: block;
+	margin: 0px;
+}	
+	
+	
 #background {
 	height: 70%;
 	width: 100%;
