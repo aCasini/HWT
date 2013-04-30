@@ -1,45 +1,45 @@
 <html>
-	<body>
-		<fieldset id="menu">
-			<fieldset id="c1">
-				<fieldset id="item1" style="float:none; margin-left: 50%; margin-right: 50%; text-align: center; background: black;">
-					<img alt="" src="img/Icone/Icon01.png">
-				</fieldset>
-			</fieldset>
-			
-			<fieldset id="c2">
-				<fieldset id="item2" style="float: left; text-align: center; margin-left: 25%; background: black;">
-					<img alt="" src="img/Icone/Icon02.png">
-				</fieldset>
-				<fieldset id="item3" style="float: right; text-align: center; margin-right: 25%; background: black;">
-					<img alt="" src="img/Icone/Icon03.png">
-				</fieldset>
-			</fieldset>
-		
-			<fieldset id="c3">
-				<fieldset id="item4" style="float: left; text-align: center; margin-left: 15%; background: black;">
-					<img alt="" src="img/Icone/Icon04.png">
-				</fieldset>
-				<fieldset id="item5" style="float: right; text-align: center; margin-right: 15%; background: black;">
-					<img alt="" src="img/Icone/Icon05.png">
-				</fieldset>
-			</fieldset>
-			
-			<fieldset id="c4">
-				<fieldset id="item6" style="float: left; text-align: center; margin-left: 25%; background: black;">
-					<img alt="" src="img/Icone/Icon06.png">
-				</fieldset>
-				<fieldset id="item7" style="float: right; text-align: center; margin-right: 25%; background: black;">
-					<img alt="" src="img/Icone/Icon07.png">
-				</fieldset>
-			</fieldset>
-			
-			<fieldset id="c5">
-				<fieldset id="item8" style="float: none; margin-left: 50%; margin-right: 50%; text-align: center; background: black;">
-					<img alt="" src="img/Icone/Icon08.png">
-				</fieldset>
-			</fieldset>
-			
-		</fieldset>
-	</body>
+<head>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- JQuery -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//TODO: operazioni per il document ready
+			});
+		</script>
+		<title>HWT</title>
+	</head>
+<body>
+	<div id="h">
+		<div id="containerHeader">
+			<img id="background" alt="" src="img/Background.jpg"
+				style="height: 72%; width: 100%; position: absolute; z-index:-1">
+			<div align="center">
+				<img alt="" src="img/Balloons.png" 
+						style="width: 36%; height: auto; z-index:0; margin-top: 1%;">
+			</div>
+			<div id="divLogo" align="center">
+				<img alt="" src="img/Logo.png"
+					style="height: 28%; width: auto; z-index:+1; display: block; margin-top: -26%;">
+			</div>
+			<div id="divIcon01" align="center">
+				<img src="img/Icone/Icon01.png"
+					style="height: 6%; width: auto; z-index: +2; margin-top: -24%; display: block;">
+			</div>
+			<div id="divIcon02" align="center">
+				<p style="z-index: 2;"> 
+					<img src="img/Icone/Icon02.png" style="margin-left: 22.2%; margin-top: 22%; height: 5%; width: auto; display: block;">
+				 </p>
+			</div>
+			<div id="divIcon03" align="center">
+				<p style="z-index: 2;"> 
+					<img src="img/Icone/Icon03.png" style="margin-right: 20.5%; margin-top: -50px; height: 5%; width: auto; display: block;">
+				 </p>
+			</div>
+		</div>
+	</div>
+</body>
 </html>

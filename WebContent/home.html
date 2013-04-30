@@ -5,30 +5,37 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!-- JQuery -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//TODO: operazioni per il document ready
+				$('ul').circleMenu({
+					  item_diameter: 100,
+					  circle_radius: 250,
+					  direction: 'full'
+				});
+			});
+		</script>
 		<title>HWT</title>
 	</head>
 	<body>
-		<fieldset id="bgImage">
-			<fieldset id="imgBallons"></fieldset>
-			<fieldset id="imgLogo"></fieldset>			
-		</fieldset>
-		<fieldset id="menu">
-			<fieldset id="c1">
-			</fieldset>
-			<fieldset id="c2">
-				<fieldset id="item2" style="float: left">
-				</fieldset>
-				<fieldset id="item3" style="float: right">
-				</fieldset>
-			</fieldset>			
-		</fieldset>
-		
-		
-		<div class="content">
-			Content
-		</div>
-		<div class="footer">
-			Footer
+		<div id="h">
+			<div id="containerHeader">
+				<img id="background" src="img/Background.jpg">
+				<div align="center">
+					<ul>
+					  <li class="centerItem"><a href="#"><img alt="" src="img/Logo.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon05.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon04.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon02.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon03.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon07.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon08.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon01.png"></a></li>
+					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon06.png"></a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
