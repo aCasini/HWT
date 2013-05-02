@@ -51,7 +51,9 @@ body {
 	-webkit-transition: all 500ms ease;
 	margin-top: 15%;
 }
-
+/* ---------------*/
+/* Mapping Ballon */
+/* ---------------*/
 div#pop-up05 {
 	display: none;
 	position: absolute;
@@ -63,7 +65,7 @@ div#pop-up05 {
 /* 	border: 1px solid #1a1a1a; */
 /* 	font-size: 40%; */
 	z-index: 2222;
-	margin-left: 250px;
+	margin-left: 180px;
 	text-align: left;
 }
 
@@ -85,6 +87,293 @@ div#mContent {
 	margin-top: 2%;
 	line-height: 20px;
 }
+/*------------*/
+/*Fine Mapping*/
+/*------------*/
+
+/* -------------- */
+/* Gaming Balloon */
+/* -------------- */
+div#pop-up04 {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 100px;
+/* 	padding: 10px; */
+/* 	background: #eeeeee; */
+	color: #000000;
+/* 	border: 1px solid #1a1a1a; */
+/* 	font-size: 40%; */
+	z-index: 2222;
+	margin-left: 180px;
+	text-align: left;
+}
+
+div#gaming {
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #ed7909;	
+	line-height: 20px;
+}
+
+div#gContent {
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*-----------*/
+/*Fine Gaming*/
+/*-----------*/
+
+/* ----------------- */
+/* Strategia Balloon */
+/* ----------------- */
+div#pop-up02 {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 100px;
+/* 	padding: 10px; */
+/* 	background: #eeeeee; */
+	color: #000000;
+/* 	border: 1px solid #1a1a1a; */
+/* 	font-size: 40%; */
+	z-index: 2222;
+	margin-left: 190px;
+	text-align: left;
+}
+
+div#strategia {
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #ed7909;	
+	line-height: 20px;
+}
+
+div#sContent {
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*--------------*/
+/*Fine Strategia*/
+/*--------------*/
+
+/* ---------------------- */
+/* UserExperience Balloon */
+/* ---------------------- */
+div#pop-up03 {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 100px;
+/* 	padding: 10px; */
+/* 	background: #eeeeee; */
+	color: #000000;
+/* 	border: 1px solid #1a1a1a; */
+/* 	font-size: 40%; */
+	z-index: 2222;
+	margin-left: 190px;
+	text-align: left;
+}
+
+div#user {
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #ed7909;	
+	line-height: 20px;
+}
+
+div#uContent {
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*-------------------*/
+/*Fine UserExperience*/
+/*-------------------*/
+
+/* ---------------- */
+/* Contatti Balloon */
+/* ---------------- */
+div#pop-up07 {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height: 100px;
+/* 	padding: 10px; */
+/* 	background: #eeeeee; */
+	color: #000000;
+/* 	border: 1px solid #1a1a1a; */
+/* 	font-size: 40%; */
+	z-index: 2222;
+	margin-left: 190px;
+	text-align: left;
+	margin-top: 15%;
+}
+
+div#contatti {
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #469f2a;	
+	line-height: 20px;
+}
+
+div#cContent {
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*-------------*/
+/*Fine Contatti*/
+/*-------------*/
+
+/* ------------------ */
+/* Conoscenza Balloon */
+/* ------------------ */
+div#pop-up08 {
+	text-align: right;
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	color: #000000;
+	z-index: 2222;
+	float: left;
+	text-align: left;
+	margin-top: -110%;;
+	margin-left: -420px;
+}
+
+div#konoscenza {
+	text-align: right;
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #307ebc;	
+	line-height: 20px;
+}
+
+div#kContent {
+	text-align: right;
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*-------------*/
+/*Fine Contatti*/
+/*-------------*/
+
+/* ---------------- */
+/* Start-up Balloon */
+/* ---------------- */
+div#pop-up01 {
+	text-align: right;
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	color: #000000;
+	z-index: 2222;
+	float: left;
+	text-align: left;
+	margin-top: -110%;;
+	margin-left: -420px;
+}
+
+div#startup {
+	text-align: right;
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #307ebc;	
+	line-height: 20px;
+}
+
+div#startContent {
+	text-align: right;
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*---------------*/
+/* Fine Start-Up */
+/*---------------*/
+
+/* ---------------------- */
+/* Business-Model Balloon */
+/*------ ---------------- */
+div#pop-up06 {
+	text-align: right;
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	color: #000000;
+	z-index: 2222;
+	float: left;
+	text-align: left;
+	margin-top: -130%;;
+	margin-left: -420px;
+}
+
+div#business {
+	text-align: right;
+	z-index: 2222;
+/* 	margin-left: 250px; */
+	font-family: helvetica;
+	font-size: x-large;
+	color: #307ebc;	
+	line-height: 20px;
+}
+
+div#bContent {
+	text-align: right;
+	z-index: 2222;
+/* 	margin-left: 300px; */
+	font-family: helvetica;
+	font-size: small;
+	color: #858688;
+	margin-top: 2%;
+	line-height: 20px;
+}
+/*---------------------*/
+/* Fine Business-Model */
+/*---------------------*/
 
 h1,h3 {
 	margin: 0;

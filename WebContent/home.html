@@ -24,12 +24,76 @@
 	});
 	
 	//Funzione di over sui Balloons
+	//MAPPING
 	$(function() {
 		$('a#icon05').hover(function() {
 			$("#balloon05").css('z-index', '2');
 			$('div#pop-up05').show();
 		}, function() {
 			$('div#pop-up05').hide();
+		});
+	});
+	//GAMING
+	$(function() {
+		$('a#icon04').hover(function() {
+			$("#balloon04").css('z-index', '2');
+			$('div#pop-up04').show();
+		}, function() {
+			$('div#pop-up04').hide();
+		});
+	});
+	//STRATEGIA
+	$(function() {
+		$('a#icon02').hover(function() {
+			$("#balloon02").css('z-index', '2');
+			$('div#pop-up02').show();
+		}, function() {
+			$('div#pop-up02').hide();
+		});
+	});
+	//USER EXPERIENCE
+	$(function() {
+		$('a#icon03').hover(function() {
+			$("#balloon03").css('z-index', '2');
+			$('div#pop-up03').show();
+		}, function() {
+			$('div#pop-up03').hide();
+		});
+	});
+	//CONTATTI
+	$(function() {
+		$('a#icon07').hover(function() {
+			$("#balloon07").css('z-index', '2');
+			$('div#pop-up07').show();
+		}, function() {
+			$('div#pop-up07').hide();
+		});
+	});
+	//CONOSCENZA
+	$(function() {
+		$('a#icon08').hover(function() {
+			$("#balloon08").css('z-index', '2');
+			$('div#pop-up08').show();
+		}, function() {
+			$('div#pop-up08').hide();
+		});
+	});
+	//START-UP
+	$(function() {
+		$('a#icon01').hover(function() {
+			$("#balloon01").css('z-index', '2');
+			$('div#pop-up01').show();
+		}, function() {
+			$('div#pop-up01').hide();
+		});
+	});
+	//BUSINESS-MODEL
+	$(function() {
+		$('a#icon06').hover(function() {
+			$("#balloon06").css('z-index', '2');
+			$('div#pop-up06').show();
+		}, function() {
+			$('div#pop-up06').hide();
 		});
 	});
 </script>
@@ -65,41 +129,126 @@
 								onmouseout="this.src='img/bIcon/bIcon05.png'">
 						</a> <!-- HIDDEN / POP-UP DIV -->
 					</li>
-					<li class="itemCircle"><a href="#"> <img alt=""
-							src="img/bIcon/bIcon04.png"
-							onmouseover="this.src='img/Icone/Big/Icon04b.png'"
-							onmouseout="this.src='img/bIcon/bIcon04.png'">
-					</a></li>
-					<li class="itemCircle"><a href="#"> <img alt=""
+					<li class="itemCircle" id="balloon04">
+						<div id="pop-up04">
+							<div id="gaming">
+								<b>Gaming</b>
+								<div id="gContent">
+									Divertimento, Simulazione di Business, Check-up.<br>
+									Il gioco permette di sviluppare il potenziale delle persone,<br> Tutti possono contribuire alle discussioni  e alle decisioni.<br>
+									Libera espressione personale.<br> Arrivare rapidamente a risultati esprimendosi con strumenti che<br> richiamano il gioco e il divertimento.<br>
+ 									Approccio collaborativo e dinamico
+								</div>
+							</div>
+						</div>
+						<a href="#" id="icon04"> <img alt=""
+								src="img/bIcon/bIcon04.png"
+								onmouseover="this.src='img/Icone/Big/Icon04b.png'"
+								onmouseout="this.src='img/bIcon/bIcon04.png'">
+						</a></li>	
+					<li class="itemCircle" id="balloon02">
+						<div id="pop-up02">
+							<div id="strategia">
+								<b>Strategia</b>
+								<div id="sContent">
+									Bussola, Esplorazione, Business Strategy, Hike,<br>
+									Hike Mapping (Livello strategico),strumenti,<br>
+									Toolkit, direzione, posizionamento strategico,<br>
+									marketing strategico
+								</div>
+							</div>
+						</div>
+						<a href="#" id="icon02"> <img alt=""
 							src="img/bIcon/bIcon02.png"
 							onmouseover="this.src='img/Icone/Big/Icon02b.png'"
 							onmouseout="this.src='img/bIcon/bIcon02.png'">
-					</a></li>
-					<li class="itemCircle"><a href="#"> <img alt=""
+						</a></li>
+					<li class="itemCircle" id="balloon03">
+						<div id="pop-up03">
+							<div id="user">
+								<b>User Experience</b>
+								<div id="uContent">
+									Narrazione, Story Telling, Personas,<br>
+									Customer Journey Map
+								</div>
+							</div>
+						</div>
+						<a href="#" id="icon03"> <img alt=""
 							src="img/bIcon/bIcon03.png"
 							onmouseover="this.src='img/Icone/Big/Icon03b.png'"
 							onmouseout="this.src='img/bIcon/bIcon03.png'">
-					</a></li>
-					<li class="itemCircle"><a href="#"> <img alt=""
+						</a></li>
+					<li class="itemCircle" id="balloon07">
+						<div id="pop-up07">
+							<div id="contatti">
+								<b>Contatti</b>
+								<div id="cContent">
+									Chi Siamo, <br>
+									Dove Siamo
+								</div>
+							</div>
+						</div>
+						<a href="#" id="icon07"> <img alt=""
 							src="img/bIcon/bIcon07.png"
 							onmouseover="this.src='img/Icone/Big/Icon07b.png'"
 							onmouseout="this.src='img/bIcon/bIcon07.png'">
-					</a></li>
-					<li class="itemCircle"><a href="#"> <img alt=""
+						</a></li>
+					<li class="itemCircle" id="balloon08">
+						<a href="#" id="icon08"> <img alt=""
 							src="img/bIcon/bIcon08.png"
 							onmouseover="this.src='img/Icone/Big/Icon08b.png'"
 							onmouseout="this.src='img/bIcon/bIcon08.png'">
-					</a></li>
-					<li class="itemCircle"><a href="#"> <img alt=""
+						</a>
+						<div id="pop-up08">
+							<div id="konoscenza">
+								<b>Conoscenza</b>
+								<div id="kContent">
+									Knowledge Management, Condivisione della conoscenza,<br>
+									Valorizzazione delle risorse, delle competenze,<br>
+									del capitale intellettuale, degli intangible.<br>
+									Mettere al centro del proprio lavoro le persone,<br>
+									i loro bisogni e le aspettative,<br>
+									scommettere sulle persone, continua sperimentazione
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="itemCircle" id="balloon01">
+						<a href="#" id="icon01"> <img alt=""
 							src="img/bIcon/bIcon01.png"
 							onmouseover="this.src='img/Icone/Big/Icon01b.png'"
 							onmouseout="this.src='img/bIcon/bIcon01.png'">
-					</a></li>
-					<li class="itemCircle"><a href="#"> <img alt=""
+						</a>
+						<div id="pop-up01">
+							<div id="startup">
+								<b>Start-Up</b>
+								<div id="startContent">
+									Aurora,Alba, Illuminare, Business Model Design,<br>
+									Canvas, Lean, Agile
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="itemCircle" id="balloon06">
+						<a href="#" id="icon06"> <img alt=""
 							src="img/bIcon/bIcon06.png"
 							onmouseover="this.src='img/Icone/Big/Icon06b.png'"
 							onmouseout="this.src='img/bIcon/bIcon06.png'">
-					</a></li>
+						</a>
+						<div id="pop-up06">
+							<div id="business">
+								<b>Business Model</b>
+								<div id="bContent">
+									Design, Business Architecture, Business Modeling,<br>
+									Value Tracking (Livello Management).<br>
+									Kaizen, Lean, Agile. Business Design<br>
+									Design Process, Business Model Canvas.<br>
+									Management
+
+								</div>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
