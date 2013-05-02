@@ -1,47 +1,110 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<!-- JQuery -->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				//TODO: operazioni per il document ready
-				$('ul').circleMenu({
-					  item_diameter: 100,
-					  circle_radius: 250,
-					  direction: 'full'
-				});
-			});
-		</script>
-		<script type="text/javascript">
-			function openMenu(){
-				$('ul').circleMenu('open');
-			}
-		</script>
-		<title>HWT</title>
-		<link href="/img/Icone/favicon.png" type="image/png"/>
-	</head>
-	<body onload="openMenu();">
-		<div id="h">
-			<div id="containerHeader">
-				<img id="background" src="img/Background.jpg">
-				<div align="center">
-					<ul>
-					  <li class="centerItem"><a href="#"><img alt="" src="img/Logo.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon05.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon04.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon02.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon03.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon07.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon08.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon01.png"></a></li>
-					  <li class="itemCircle"><a href="#"><img alt="" src="img/bIcon/bIcon06.png"></a></li>
-					</ul>
-				</div>
+<head>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script
+	src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//Caricamento del munu circolare
+		$('ul').circleMenu({
+			item_diameter : 100,
+			circle_radius : 250,
+			'transition_function' : 'linear',
+			direction : 'full'
+		});
+	});
+
+	$(window).load(function() {
+		//Setting z-index Balloons
+		$("#centerId").css('z-index', '1');
+	});
+	
+	//Funzione di over sui Balloons
+	$(function() {
+		$('a#icon05').hover(function() {
+			$("#balloon05").css('z-index', '2');
+			$('div#pop-up05').show();
+		}, function() {
+			$('div#pop-up05').hide();
+		});
+	});
+</script>
+<script type="text/javascript">
+	function openMenu() {
+		$('ul').circleMenu('open');
+	}
+</script>
+<title>HWT</title>
+<link href="/img/Icone/favicon.png" type="image/png" />
+</head>
+<body onload="openMenu();">
+	<div id="h">
+		<div id="containerHeader">
+			<img id="background" src="img/Background.jpg">
+			<div align="center" id="ex-timing">
+				<ul>
+					<li class="centerItem" id="centerId"><a href="#"><img
+							alt="" src="img/Logo.png"></a></li>
+					<li class="itemCircle" id="balloon05">
+						<div id="pop-up05">
+							<div id="mapping">
+								<b>Mapping</b>
+								<div id="mContent">
+									contenuto del mapping
+								</div>
+							</div>
+						</div>
+						<a href="#" id="icon05"> <img
+								alt="" src="img/bIcon/bIcon05.png"
+								onmouseover="this.src='img/Icone/Big/Icon05b.png'"
+								onmouseout="this.src='img/bIcon/bIcon05.png'">
+						</a> <!-- HIDDEN / POP-UP DIV -->
+					</li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon04.png"
+							onmouseover="this.src='img/Icone/Big/Icon04b.png'"
+							onmouseout="this.src='img/bIcon/bIcon04.png'">
+					</a></li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon02.png"
+							onmouseover="this.src='img/Icone/Big/Icon02b.png'"
+							onmouseout="this.src='img/bIcon/bIcon02.png'">
+					</a></li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon03.png"
+							onmouseover="this.src='img/Icone/Big/Icon03b.png'"
+							onmouseout="this.src='img/bIcon/bIcon03.png'">
+					</a></li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon07.png"
+							onmouseover="this.src='img/Icone/Big/Icon07b.png'"
+							onmouseout="this.src='img/bIcon/bIcon07.png'">
+					</a></li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon08.png"
+							onmouseover="this.src='img/Icone/Big/Icon08b.png'"
+							onmouseout="this.src='img/bIcon/bIcon08.png'">
+					</a></li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon01.png"
+							onmouseover="this.src='img/Icone/Big/Icon01b.png'"
+							onmouseout="this.src='img/bIcon/bIcon01.png'">
+					</a></li>
+					<li class="itemCircle"><a href="#"> <img alt=""
+							src="img/bIcon/bIcon06.png"
+							onmouseover="this.src='img/Icone/Big/Icon06b.png'"
+							onmouseout="this.src='img/bIcon/bIcon06.png'">
+					</a></li>
+				</ul>
 			</div>
 		</div>
-	</body>
+		<div>
+			<!-- 				<p>HWT s.r.l. · Via Francesco DOmenico Guerrazzi 1/n · 50132 Firenze · CF e P.IVA 06281750486</p> -->
+		</div>
+	</div>
+</body>
 </html>
