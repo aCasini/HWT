@@ -1,118 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<!-- JQuery -->
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script
-	src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		//Caricamento del munu circolare
-		$('ul').circleMenu({
-			item_diameter : 150,
-			circle_radius : 300,
-			'transition_function' : 'linear',
-			direction : 'full'
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/pagesStyle.css" />
+	<!-- JQuery -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/menu.js"></script>
+<!-- 	<script src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//Caricamento del munu circolare
+			$('ul').circleMenu({
+				item_diameter : 150,
+				circle_radius : 300,
+				'transition_function' : 'linear',
+				direction : 'full'
+			});
+			
 		});
-	});
-
-	$(window).load(function() {
-		//Setting z-index Balloons
-		$("#centerId").css('z-index', '1');
-	});
 	
-	//Funzione di over sui Balloons
-	//MAPPING
-	$(function() {
-		$('a#icon05').hover(function() {
-			$("#balloon05").css('z-index', '2');
-			$('div#pop-up05').show();
-		}, function() {
-			$('div#pop-up05').hide();
+		$(window).load(function() {
+			//Setting z-index Balloons
+			$("#centerId").css('z-index', '1');
 		});
-	});
-	//GAMING
-	$(function() {
-		$('a#icon04').hover(function() {
-			$("#balloon04").css('z-index', '2');
-			$('div#pop-up04').show();
-		}, function() {
-			$('div#pop-up04').hide();
+		
+		//Funzione di over sui Balloons
+		//MAPPING
+		$(function() {
+			$('a#icon05').hover(function() {
+				$("#balloon05").css('z-index', '2');
+				$('div#pop-up05').show();
+			}, function() {
+				$('div#pop-up05').hide();
+			});
 		});
-	});
-	//STRATEGIA
-	$(function() {
-		$('a#icon02').hover(function() {
-			$("#balloon02").css('z-index', '2');
-			$('div#pop-up02').show();
-		}, function() {
-			$('div#pop-up02').hide();
+		//GAMING
+		$(function() {
+			$('a#icon04').hover(function() {
+				$("#balloon04").css('z-index', '2');
+				$('div#pop-up04').show();
+			}, function() {
+				$('div#pop-up04').hide();
+			});
 		});
-	});
-	//USER EXPERIENCE
-	$(function() {
-		$('a#icon03').hover(function() {
-			$("#balloon03").css('z-index', '2');
-			$('div#pop-up03').show();
-		}, function() {
-			$('div#pop-up03').hide();
+		//STRATEGIA
+		$(function() {
+			$('a#icon02').hover(function() {
+				$("#balloon02").css('z-index', '2');
+				$('div#pop-up02').show();
+			}, function() {
+				$('div#pop-up02').hide();
+			});
 		});
-	});
-	//CONTATTI
-	$(function() {
-		$('a#icon07').hover(function() {
-			$("#balloon07").css('z-index', '2');
-			$('div#pop-up07').show();
-		}, function() {
-			$('div#pop-up07').hide();
+		//USER EXPERIENCE
+		$(function() {
+			$('a#icon03').hover(function() {
+				$("#balloon03").css('z-index', '2');
+				$('div#pop-up03').show();
+			}, function() {
+				$('div#pop-up03').hide();
+			});
 		});
-	});
-	//CONOSCENZA
-	$(function() {
-		$('a#icon08').hover(function() {
-			$("#balloon08").css('z-index', '2');
-			$('div#pop-up08').show();
-		}, function() {
-			$('div#pop-up08').hide();
+		//CONTATTI
+		$(function() {
+			$('a#icon07').hover(function() {
+				$("#balloon07").css('z-index', '2');
+				$('div#pop-up07').show();
+			}, function() {
+				$('div#pop-up07').hide();
+			});
 		});
-	});
-	//START-UP
-	$(function() {
-		$('a#icon01').hover(function() {
-			$("#balloon01").css('z-index', '2');
-			$('div#pop-up01').show();
-		}, function() {
-			$('div#pop-up01').hide();
+		//CONOSCENZA
+		$(function() {
+			$('a#icon08').hover(function() {
+				$("#balloon08").css('z-index', '2');
+				$('div#pop-up08').show();
+			}, function() {
+				$('div#pop-up08').hide();
+			});
 		});
-	});
-	//BUSINESS-MODEL
-	$(function() {
-		$('a#icon06').hover(function() {
-			$("#balloon06").css('z-index', '2');
-			$('div#pop-up06').show();
-		}, function() {
-			$('div#pop-up06').hide();
+		//START-UP
+		$(function() {
+			$('a#icon01').hover(function() {
+				$("#balloon01").css('z-index', '2');
+				$('div#pop-up01').show();
+			}, function() {
+				$('div#pop-up01').hide();
+			});
 		});
-	});
-</script>
-<script type="text/javascript">
-	function openMenu() {
-		$('ul').circleMenu('open');
-	}
-</script>
-<title>HWT</title>
-<link href="/img/Icone/favicon.png" type="image/png" />
+		//BUSINESS-MODEL
+		$(function() {
+			$('a#icon06').hover(function() {
+				$("#balloon06").css('z-index', '2');
+				$('div#pop-up06').show();
+			}, function() {
+				$('div#pop-up06').hide();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		function openMenu() {
+			$('ul').circleMenu('open');
+		}
+		
+		function scrolling05(){
+            $('html, body').animate({
+                scrollTop: 800
+            }, 1500);
+		}
+		
+		function scrolling04(){
+            $('html, body').animate({
+                scrollTop: 1200
+            }, 1500);
+		}
+		
+		function scrolling02(){
+            $('html, body').animate({
+                scrollTop: 1700
+            }, 1500);
+		}
+	</script>
+	<title>HWT</title>
+	<link href="/img/Icone/favicon.png" type="image/png" />
 </head>
 <body onload="openMenu();">
-	<div id="h">
+	<div id="allContent" style="display: block;">
 		<div id="containerHeader">
-			<img id="background" src="img/Background.jpg">
+<!-- 			<img id="background"> -->
 			<div align="center" id="ex-timing">
 				<ul>
 					<li class="centerItem" id="centerId"><a href="#"><img
-							alt="" src="img/Logo.png"></a></li>
+							alt="Logo HWT" src="img/Logo.png"></a></li>
 					<li class="itemCircle" id="balloon05">
 						<div id="pop-up05">
 							<div id="mapping">
@@ -123,8 +143,8 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon05"> <img
-								alt="" src="img/bIcon/bIcon05.png"
+						<a href="#" id="icon05" onclick="scrolling05();"> <img
+								alt="Mapping" src="img/bIcon/bIcon05.png"
 								onmouseover="this.src='img/Icone/Big/Icon05b.png'"
 								onmouseout="this.src='img/bIcon/bIcon05.png'">
 						</a> <!-- HIDDEN / POP-UP DIV -->
@@ -141,7 +161,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon04"> <img alt=""
+						<a href="#" id="icon04" onclick="scrolling04();"> <img alt="Gaming"
 								src="img/bIcon/bIcon04.png"
 								onmouseover="this.src='img/Icone/Big/Icon04b.png'"
 								onmouseout="this.src='img/bIcon/bIcon04.png'">
@@ -158,7 +178,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon02"> <img alt=""
+						<a href="#" id="icon02" onclick="scrolling02();"> <img alt="Strategia"
 							src="img/bIcon/bIcon02.png"
 							onmouseover="this.src='img/Icone/Big/Icon02b.png'"
 							onmouseout="this.src='img/bIcon/bIcon02.png'">
@@ -173,7 +193,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon03"> <img alt=""
+						<a href="#" id="icon03"> <img alt="User Experience"
 							src="img/bIcon/bIcon03.png"
 							onmouseover="this.src='img/Icone/Big/Icon03b.png'"
 							onmouseout="this.src='img/bIcon/bIcon03.png'">
@@ -188,13 +208,13 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon07"> <img alt=""
+						<a href="#" id="icon07"> <img alt="Contatti"
 							src="img/bIcon/bIcon07.png"
 							onmouseover="this.src='img/Icone/Big/Icon07b.png'"
 							onmouseout="this.src='img/bIcon/bIcon07.png'">
 						</a></li>
 					<li class="itemCircle" id="balloon08">
-						<a href="#" id="icon08"> <img alt=""
+						<a href="#" id="icon08"> <img alt="Conoscenza"
 							src="img/bIcon/bIcon08.png"
 							onmouseover="this.src='img/Icone/Big/Icon08b.png'"
 							onmouseout="this.src='img/bIcon/bIcon08.png'">
@@ -214,7 +234,7 @@
 						</div>
 					</li>
 					<li class="itemCircle" id="balloon01">
-						<a href="#" id="icon01"> <img alt=""
+						<a href="#" id="icon01"> <img alt="Start-Up"
 							src="img/bIcon/bIcon01.png"
 							onmouseover="this.src='img/Icone/Big/Icon01b.png'"
 							onmouseout="this.src='img/bIcon/bIcon01.png'">
@@ -230,7 +250,7 @@
 						</div>
 					</li>
 					<li class="itemCircle" id="balloon06">
-						<a href="#" id="icon06"> <img alt=""
+						<a href="#" id="icon06"> <img alt="Business Model"
 							src="img/bIcon/bIcon06.png"
 							onmouseover="this.src='img/Icone/Big/Icon06b.png'"
 							onmouseout="this.src='img/bIcon/bIcon06.png'">
@@ -251,9 +271,66 @@
 					</li>
 				</ul>
 			</div>
+			<div id="infoDitta">
+				HWT s.r.l. - Via Francesco Domenico Guerrazzi 1/n - 50132 Firenze - CF e P.IVA 06281750486
+			</div>
 		</div>
-		<div>
-			<!-- 				<p>HWT s.r.l. · Via Francesco DOmenico Guerrazzi 1/n · 50132 Firenze · CF e P.IVA 06281750486</p> -->
+		<div id="pagMapping">
+			<div class="generalContent">
+				MAPPING
+				<div id="contentPagMapping">
+					Il Visual Thinking rappresenta la pratica di usare le immagini per comunicare in maniera chiara e intuitiva.<br>
+					Schizzi, disegni o note su post-it, per esempio, possono essere utilizzati per costruire e discutere un'idea o per risolvere problemi.<br>
+					Le tecniche visuali permettono di "dare vita" alle questioni legate al business, passando dall'astratto al concreto. <br>
+					Credendo fortemente nel potere delle immagini, il Team di HWT ha sviluppato un toolkit di strumenti visuali che si vanno ad aggiungere a quelli gi&agrave consolidati e presenti nello scenario attuale, come il Business Mode Canvas, una mappa concettuale (una sorta di "tela" da cui deriva il nome Canvas) suddivisa in nove elementi base, che funziona attraverso dei post-it, che diventano contenitori di idee e rappresentano un mezzo per le discussioni di tipo strategico.<br> 
+					Lo "schizzo" &egrave il modo con cui visualizzare le idee, come suggerisce Dam Roam nel libro "The Back of the Napking (2008).
+				</div>
+			</div>
+		</div>
+		<div id="pagGaming">
+			<div class="generalContent">
+				GAMING
+				<div id="contentPagGaming">
+					Il nostro metodo di lavoro si sviluppa sulla convizione che quando le persone vengono coinvolte "giocando" diventa pi&ugrave facile per loro analizzare situazioni o individuare soluzioni.
+					Per questo i nostri strumenti  richiamano il gioco e il divertimento, e si basano su un approccio collaborativo e dinamico.
+					Il gioco infatti permette di sviluppare il potenziale delle persone, favorendo la libera espressione personale e favorendo il contributo di tutti alle discussioni e alle decisioni.
+				</div>
+			</div>
+		</div>
+		<div id="pagStrategia">
+			<div class="generalContent">
+				<div style="text-align: center;">STRATEGIA</div>
+				<div id="contentPagStrategia">
+					Sia che un'organizzazione voglia esplorare un nuovo business, sia che voglia far crescerne uno gi&agrave esistente, la rappresentazione completa della strategia di business &egrave fondamentale.<br>
+					Tenuto conto di questo obiettivo, il punto di partenza &egrave per noi l'esplorazione del modello organizzativo attuale, ed in particolare l'analisi dell'identit&agrave delll'organizzazione,<br>
+					in termini di cultura organizzativa, risorse o capabilities disponibili, posizionamento rispetto ai competitors.<br>
+					Il toolkit di strumenti visuali che andiamo ad utilizzare si compone innanzi tutto del Business Model Canvas, che rappresentando il modello di business attuale, diventa la lente per la reinterpretazione della strategia.<br>
+					Seguir&agrave l'esame strategico dell'ambiente in cui opera il modello di business.<br>
+					Queste sono le fasi del nostro lavoro a livello strategico:<br><br>
+					 
+					A - Hike Mapping<br>
+					Modello di Business<br>
+					<br>
+					B - Business Compass<br>
+					Cultura organizzativa (i valori fondamentalu in cui crede l'organizzazione, i sogni e le ambizioni)<br>
+					<br>
+					C - Business Engine<br>
+					Capabilities/Resources Assessment<br>
+					<br>
+					D - Market<br>
+					Analisi dell'ambiente<br>
+					Analisi del mercato<br>
+					Analisi dei concorrenti<br>
+					Posizionamento strategico<br>
+					<br>
+					E - Finance<br>
+					Analisi economico-finanziaria<br>
+					<br>
+					F - Business Pattern<br>
+					Business Strategy<br>
+					Marketing Strategico<br>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
