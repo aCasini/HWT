@@ -1,0 +1,74 @@
+.generalContent {
+	margin-left: 15%;
+	margin-top: 5%;
+	margin-bottom: 7%;
+}
+
+#pagMapping {
+	width: 100%;
+	float: left;
+	margin-top: 55.6%;
+	font-family: helvetica;
+	font-size: 60px;
+	font-weight: bolder;
+	/* 	margin-left: 15%; */
+	/* 	color: linear-gradient(top right, #FFFFFF 0%, #AACFEF 100%); */
+	color: #469f2a;
+}
+
+#contentPagMapping {
+	width: 50%;
+	float: right;
+	/* 	margin-top: 55.6%; */
+	font-family: helvetica;
+	font-size: small;
+	margin-right: 26%;
+	color: #858688;
+	line-height: 28px;
+	text-align: left;
+}
+
+#pagGaming {
+	width: 100%;
+	float: left;
+	margin-top: 8%;
+	background-color: white;
+	font-family: helvetica;
+	font-size: 60px;
+	font-weight: bolder;
+	/* 	margin-left: 15%; */
+	color: #ed7909;
+}
+
+#contentPagGaming {
+	width: 50%;
+	float: right;
+	/* 	margin-top: 55.6%; */
+	font-family: helvetica;
+	font-size: small;
+	margin-right: 28%;
+	color: #858688;
+	line-height: 28px;
+	text-align: left;
+}
+
+#pagStrategia {
+	width: 80%;
+	float: left;
+	margin-top: 1%;
+	font-family: helvetica;
+	font-size: 60px;
+	font-weight: bolder;
+	color: #ed7909;
+}
+
+#contentPagStrategia {
+	width: 60%;
+	float: right;
+	font-family: helvetica;
+	font-size: small;
+	margin-right: 18%;
+	color: #858688;
+	line-height: 28px;
+	text-align: left;
+}
