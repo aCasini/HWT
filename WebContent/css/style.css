@@ -7,11 +7,11 @@
 body {
 	display: block;
 	margin: 0px;
-	background-color: #f0f0f0;
+/* 	background-color: #f0f0f0; */
 }
 
 #containerHeader {
-	height: 830px;
+	height: 845px;
 	width: 100%;
 	background-image: url('../img/Background.jpg');
 	position: absolute;
@@ -35,8 +35,8 @@ body {
 	border-bottom-left-radius: 200px;
 	-webkit-transform: scale(0.5);
 	-webkit-transition: all 500ms ease;
-	margin-left: 46.5%;
-	margin-top: 22%;
+	margin-left: 45%;
+	margin-top: 21%;
 }
 
 .centerItem {
@@ -52,7 +52,7 @@ body {
 	border-bottom-right-radius: 100px;
 	border-bottom-left-radius: 100px;
 	-webkit-transition: all 500ms ease;
-	margin-top: 17%;
+	margin-top: 19%;
 }
 /* ---------------*/
 /* Mapping Ballon */
@@ -68,7 +68,7 @@ div#pop-up05 {
 /* 	border: 1px solid #1a1a1a; */
 /* 	font-size: 40%; */
 	z-index: 2222;
-	margin-left: 180px;
+	margin-left: 160px;
 	text-align: left;
 }
 
@@ -108,7 +108,7 @@ div#pop-up04 {
 /* 	border: 1px solid #1a1a1a; */
 /* 	font-size: 40%; */
 	z-index: 2222;
-	margin-left: 180px;
+	margin-left: 160px;
 	text-align: left;
 }
 
@@ -148,7 +148,7 @@ div#pop-up02 {
 /* 	border: 1px solid #1a1a1a; */
 /* 	font-size: 40%; */
 	z-index: 2222;
-	margin-left: 190px;
+	margin-left: 160px;
 	text-align: left;
 }
 
@@ -188,7 +188,7 @@ div#pop-up03 {
 /* 	border: 1px solid #1a1a1a; */
 /* 	font-size: 40%; */
 	z-index: 2222;
-	margin-left: 190px;
+	margin-left: 160px;
 	text-align: left;
 }
 
@@ -228,9 +228,9 @@ div#pop-up07 {
 /* 	border: 1px solid #1a1a1a; */
 /* 	font-size: 40%; */
 	z-index: 2222;
-	margin-left: 190px;
+	margin-left: 160px;
 	text-align: left;
-	margin-top: 15%;
+	margin-top: 80px;
 }
 
 div#contatti {
@@ -309,7 +309,7 @@ div#pop-up01 {
 	z-index: 2222;
 	float: left;
 	text-align: left;
-	margin-top: -110%;;
+	margin-top: -90%;;
 	margin-left: -420px;
 }
 
@@ -350,7 +350,7 @@ div#pop-up06 {
 	z-index: 2222;
 	float: left;
 	text-align: left;
-	margin-top: -130%;;
+	margin-top: -100%;;
 	margin-left: -420px;
 }
 
@@ -382,7 +382,7 @@ div#bContent {
 	display: block; 
 	text-align: center; 
 	margin-top: 800px; 
-	margin-left: 33%;
+/* 	margin-left: 33%; */
 	position: absolute;
 	font-family: helvetica;
 	font-size: small;

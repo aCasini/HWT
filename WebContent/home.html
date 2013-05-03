@@ -4,8 +4,11 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/pagesStyle.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 	<!-- JQuery -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	
 	<script src="js/menu.js"></script>
 <!-- 	<script src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script> -->
 	<script type="text/javascript">
@@ -14,7 +17,7 @@
 			//Caricamento del munu circolare
 			$('ul').circleMenu({
 				item_diameter : 150,
-				circle_radius : 300,
+				circle_radius : 280,
 				'transition_function' : 'linear',
 				direction : 'full'
 			});
@@ -127,35 +130,42 @@
 		
 		function scrolling02(){
             $('html, body').animate({
-                scrollTop: 1700
+                scrollTop: 1500
             }, 1500);
             isOnTop=false;
 		}
 		
 		function scrolling03(){
             $('html, body').animate({
-                scrollTop: 2700
+                scrollTop: 2500
             }, 1500);
             isOnTop=false;
 		}
 		
 		function scrolling08(){
             $('html, body').animate({
-                scrollTop: 3200
+                scrollTop: 3000
             }, 1500);
             isOnTop=false;
 		}
 		
 		function scrolling01(){
             $('html, body').animate({
-                scrollTop: 3200
+                scrollTop: 3000
             }, 1500);
             isOnTop=false;
 		}
 		
 		function scrolling06(){
             $('html, body').animate({
-                scrollTop: 3800
+                scrollTop: 3600
+            }, 1500);
+            isOnTop=false;
+		}
+		
+		function scrolling07(){
+            $('html, body').animate({
+                scrollTop: 4200
             }, 1500);
             isOnTop=false;
 		}
@@ -173,9 +183,9 @@
 </head>
 <body onload="openMenu();" style="overflow: scroll;">
 	<div id="allContent" style="display: block;">
-		<div id="containerHeader">
-<!-- 			<img id="background"> -->
-			<div align="center" id="ex-timing">
+		<div id="containerHeader" class="row-fluid">
+<!-- 			<img id="background"> -->	
+			<div align="center" id="ex-timing" class="span12">
 				<ul>
 					<li class="centerItem" id="centerId"><a href="#"><img
 							alt="Logo HWT" src="img/Logo.png"></a></li>
@@ -189,8 +199,8 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon05" onclick="scrolling05();"> <img
-								alt="Mapping" src="img/bIcon/bIcon05.png"
+						<a href="#" id="icon05" onclick="scrolling05();">
+							 <img alt="Mapping" src="img/bIcon/bIcon05.png"
 								onmouseover="this.src='img/Icone/Big/Icon05b.png'"
 								onmouseout="this.src='img/bIcon/bIcon05.png'">
 						</a> <!-- HIDDEN / POP-UP DIV -->
@@ -213,7 +223,7 @@
 								onmouseout="this.src='img/bIcon/bIcon04.png'">
 						</a></li>	
 					<li class="itemCircle" id="balloon02">
-						<div id="pop-up02">
+						<div id="pop-up02" >
 							<div id="strategia">
 								<b>Strategia</b>
 								<div id="sContent">
@@ -230,7 +240,7 @@
 							onmouseout="this.src='img/bIcon/bIcon02.png'">
 						</a></li>
 					<li class="itemCircle" id="balloon03">
-						<div id="pop-up03">
+						<div id="pop-up03" >
 							<div id="user">
 								<b>User Experience</b>
 								<div id="uContent">
@@ -254,7 +264,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" id="icon07"> <img alt="Contatti"
+						<a href="#" id="icon07" onclick="scrolling07();"> <img alt="Contatti"
 							src="img/bIcon/bIcon07.png"
 							onmouseover="this.src='img/Icone/Big/Icon07b.png'"
 							onmouseout="this.src='img/bIcon/bIcon07.png'">
@@ -285,7 +295,7 @@
 							onmouseover="this.src='img/Icone/Big/Icon01b.png'"
 							onmouseout="this.src='img/bIcon/bIcon01.png'">
 						</a>
-						<div id="pop-up01">
+						<div id="pop-up01" >
 							<div id="startup">
 								<b>Start-Up</b>
 								<div id="startContent">
@@ -317,14 +327,16 @@
 					</li>
 				</ul>
 			</div>
-			<div id="infoDitta">
+			<div id="infoDitta" class="row-fluid">
 				HWT s.r.l. - Via Francesco Domenico Guerrazzi 1/n - 50132 Firenze - CF e P.IVA 06281750486
 			</div>
 		</div>
-		<div id="pagMapping">
+		<div id="pagMapping" class="row-fluid">
 			<div class="generalContent">
-				<img alt="Mapping" src="img/titles/Mapping.png">
-				<div id="contentPagMapping">
+				<div class="span3">
+					<img alt="Mapping" src="img/titles/Mapping.png">
+				</div>
+				<div id="contentPagMapping"  class="span8">
 					Il Visual Thinking rappresenta la pratica di usare le immagini per comunicare in maniera chiara e intuitiva.<br>
 					Schizzi, disegni o note su post-it, per esempio, possono essere utilizzati per costruire e discutere un'idea o per risolvere problemi.<br>
 					Le tecniche visuali permettono di "dare vita" alle questioni legate al business, passando dall'astratto al concreto. <br>
@@ -333,25 +345,27 @@
 				</div>
 			</div>
 		</div>
-			<div id="goTop" style="margin-top: 700px; position: fixed; visibility: hidden; margin-left: 92%">
+			<div id="goTop" style="margin-top: 700px; position: fixed; visibility: hidden; margin-left: 92%" class="row-fluid">
 				<a href="#" onclick="goOnTop();"><img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png"></a>
 			</div>
-		<div id="pagGaming">
-			<div class="generalContent">
-				<img alt="Gaming" src="img/titles/Gaminfication.png">
-				<div id="contentPagGaming">
+		<div id="pagGaming" class="row-fluid">
+			<div class="generalContent" class="span2">
+				<div class="span4">
+					<img alt="Gaming" src="img/titles/Gaminfication.png">
+				</div>
+				<div id="contentPagGaming" class="span8">
 					Il nostro metodo di lavoro si sviluppa sulla convizione che quando le persone vengono coinvolte "giocando" diventa pi&ugrave facile per loro analizzare situazioni o individuare soluzioni.
 					Per questo i nostri strumenti  richiamano il gioco e il divertimento, e si basano su un approccio collaborativo e dinamico.
 					Il gioco infatti permette di sviluppare il potenziale delle persone, favorendo la libera espressione personale e favorendo il contributo di tutti alle discussioni e alle decisioni.
 				</div>
 			</div>
 		</div>
-		<div id="pagStrategia">
-			<div class="generalContent">
-				<div style="text-align: center;">
+		<div id="pagStrategia" class="row-fluid">
+			<div class="generalContent" class="span2">
+				<div class="span3" style="margin-left: 30%">
 					<img alt="Strategia" src="img/titles/Strategia.png">
 				</div>
-				<div id="contentPagStrategia">
+				<div id="contentPagStrategia" class="span8">
 					Sia che un'organizzazione voglia esplorare un nuovo business, sia che voglia far crescerne uno gi&agrave esistente, la rappresentazione completa della strategia di business &egrave fondamentale.<br>
 					Tenuto conto di questo obiettivo, il punto di partenza &egrave per noi l'esplorazione del modello organizzativo attuale, ed in particolare l'analisi dell'identit&agrave delll'organizzazione,<br>
 					in termini di cultura organizzativa, risorse o capabilities disponibili, posizionamento rispetto ai competitors.<br>
@@ -383,10 +397,12 @@
 				</div>
 			</div>
 		</div>
-		<div id="pagUserExperience">
-			<div class="generalContent">
-				<img alt="User-Experience" src="img/titles/UX.png">
-				<div id="contentPagUserExperience">
+		<div id="pagUserExperience" class="row-fluid">
+			<div class="generalContent" class="span2">
+				<div class="span4">
+					<img alt="User-Experience" src="img/titles/UX.png">
+				</div>
+				<div id="contentPagUserExperience" class="span8">
 					L'UX &egrave per noi un driver di valore e pertanto ha un ruolo centrale in tutte le fasi di contatto con il cliente. Utilizziamo template visuali, <br>
 					i"Personas", per descrivere i nostri clienti, cercando di coglierne a fondo le proccupazioni, le ambizioni, i comportamenti e la loro esperienza (CX= Customer Experience).<br>
 					I"Personas" sono quindi il nostro framework di riferimento per esplorare il valore del cliente.<br>
@@ -396,13 +412,13 @@
 				</div>
 			</div>
 		</div>
-		<div id="pagKnowStart">
-			<div class="generalContent">
+		<div id="pagKnowStart" class="row-fluid">
+			<div class="generalContent" class="span12">
 				<div id="pagKnowHow">
-					<div style="margin-left: 34%">
+					<div style="margin-left: 34%; padding: 20px;" class="span6">
 						<img alt="Know-How" src="img/titles/Knowhow.png">
 					</div>
-					<div id="contentPagKnowHow">
+					<div id="contentPagKnowHow" class="span8">
 						<div>
 						Il valore di un'organizzazione non si misura esclusivamente dalle risorse tangibili, ma risiede soprattutto nella conoscenza,<br>
 						intesa come valorizzazione del capitale inellettuale, delle competenze e in generale di tutte le risorse "intangible".<br>
@@ -413,10 +429,10 @@
 					</div>
 				</div>
 				<div id="pagStartUp">
-					<div style="margin-left: 10%">
+					<div style="margin-left: 10%; padding: 20px;" class="span5">
 						<img alt="Start-Up" src="img/titles/Startup.png">
 					</div>
-					<div id="contentPagStartUp">
+					<div id="contentPagStartUp" class="span8">
 						<div>
 						La Start-up nasce da un'idea, ma affinch&egrave un'idea possa essere  trasformata in business ogni suo elemento deve essere descritto e analizzato in chiave strategica.<br> 
 						HWT &egrave una start-up, e come tale conosce le condizioni di estrema incertezza e di vulnerabilità in cui si muovono questo tipo di organizzazioni.<br>
@@ -427,10 +443,12 @@
 				</div>
 			</div>
 		</div>
-		<div id="pagBusinessModel">
+		<div id="pagBusinessModel" class="row-fluid">
 			<div class="generalContent">
-				<img alt="Business-Model" src="img/titles/Business-model.png">
-				<div id="contentPagBusinessModel">
+				<div class="span4">
+					<img alt="Business-Model" src="img/titles/Business-model.png">
+				</div>
+				<div id="contentPagBusinessModel" class="span8">
 					Il Business Model racconta il funzionamento di un'organizzazione. Convinti che ogni persona possa apportare valore all'organizzazione secondo un<br>
 					approccio Kaizen, che incoraggia un percorso di miglioramento continuo basato sul rinnovamento a piccoli passi giorno per giorno, crediamo che la<br>
 					descrizione di un modello di business debba essere condotta attraverso il supporto di tutti, ed &egrave pertanto necessario che ci sia una  comprensione<br>
@@ -448,29 +466,37 @@
 				</div>
 			</div>
 		</div>
-		<div id="pagContatti">
+		<div id="pagContatti" class="row-fluid">
 <!-- 				<img alt="Contatti" src="img/footer/Map.jpg"> -->
-				<div id="contentContatti" style="padding: 8%;">
-					<div id="blueCanvas" >
-						HWT &egrave una start-up fondata nel 2013 da un team di giovani legati dal-<br>
-						la convinzione che la vera sfida per le imprese risieda nella ricerca e<br>
+				<div id="contentContatti" style="padding: 4%;" class="span12">
+					<div id="blueCanvas" class="span5">
+						HWT &egrave una start-up fondata nel 2013 da un team di giovani legati dal-
+						la convinzione che la vera sfida per le imprese risieda nella ricerca e
 						l'esplorazione del proprio valore.<br><br>
 						
-						HWT sta per Hike + Worth ovvero "Esplorazione del valore" come<br>
-						strumento per "illuminare" il business e "scalare" il successo.<br>
+						HWT sta per Hike + Worth ovvero "Esplorazione del valore" come
+						strumento per "illuminare" il business e "scalare" il successo.<br><br>
 						
-						Con strumenti semplici, intuitivi, agili e innovativi aiutiamo le organiz-<br>
-						zazioni che vogliono innovarsi nella comprensione e nello sviluppo<br>
-						del proprio business fornendo un kit di conoscenze strategiche e ma-<br>
-						nageriali con un approccio non convenzionale basato sul visual thin-<br>
+						Con strumenti semplici, intuitivi, agili e innovativi aiutiamo le organiz-
+						zazioni che vogliono innovarsi nella comprensione e nello sviluppo
+						del proprio business fornendo un kit di conoscenze strategiche e ma-
+						nageriali con un approccio non convenzionale basato sul visual thin-
 						king, che permette di ottenere benefici tangibili e inaspettati.<br><br>
 						
-						Il nostro metodo si fonda sulla rappresentazione grafica, che consi-<br>
-						deriamo il modo pi&ugrave semplice e creativo per fissare concetti o rap-<br>
-						presentare problemi e idee; per questo utilizziamo strumenti derivati<br>
-						dal pensiero visuale, tra i quali il Business Model Canvas, ideato da<br>
-						Alexander Oserwalder e diffuso attraverso il libro di cui egli stesso &egrave<br>
+						Il nostro metodo si fonda sulla rappresentazione grafica, che consi-
+						deriamo il modo pi&ugrave semplice e creativo per fissare concetti o rap-
+						presentare problemi e idee; per questo utilizziamo strumenti derivati
+						dal pensiero visuale, tra i quali il Business Model Canvas, ideato da
+						Alexander Oserwalder e diffuso attraverso il libro di cui egli stesso &egrave
 						autore "Business Model Generation"
+					</div>
+					<div id="greenCanvas" class="span3">
+						<b>
+						Via F. D. Guerrazzi n&deg 1/N<br>
+						50132 - Firenze<br>
+						tel. +39 055 3987682<br>
+						info@hwtconsulting.i<br>
+						</b>
 					</div>
 				</div>
 		</div>
