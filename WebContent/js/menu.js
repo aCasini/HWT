@@ -162,45 +162,46 @@
         self._state = 'opening';
         return self;
     };
-    CircleMenu.prototype.close = function(immediate){
-        var self = this,
-            $self = this.element,
-            do_animation = function do_animation(){
-            var start = 0,
-                set;
-
-            self.submenus.circleMenu('close');
-            self.clearTimeouts();
-            if(self._state === 'closed') return self;
-            if(self.options.step_in >= 0){
-                set = self.menu_items;
-            }else{
-                set = $(self.menu_items.get().reverse());
-            }
-            set.each(function(index){
-                var $item = $(this);
-
-                self._timeouts.push(setTimeout(function(){
-                    $item.css({top:0,left:0});
-                    vendorPrefixes($item,'transform','scale(.5)');
-                }, start + Math.abs(self.options.step_in) * index));
-            });
-            self._timeouts.push(setTimeout(function(){
-                if(self._state === 'closing') self.trigger('close');
-                self._state = 'closed';
-            },start+Math.abs(self.options.step_in) * set.length));
-            $self.removeClass(pluginName+'-open');
-            $self.addClass(pluginName+'-closed');
-            self._state = 'closing';
-            return self;
-        };
-        if(immediate){
-            do_animation();
-        }else{
-            self._timeouts.push(setTimeout(do_animation,self.options.delay));
-        }
-        return this;
-    };
+//    CircleMenu.prototype.close = function(immediate){
+//    	alert("Chiusura");
+//        var self = this,
+//            $self = this.element,
+//            do_animation = function do_animation(){
+//            var start = 0,
+//                set;
+//
+//            self.submenus.circleMenu('close');
+//            self.clearTimeouts();
+//            if(self._state === 'closed') return self;
+//            if(self.options.step_in >= 0){
+//                set = self.menu_items;
+//            }else{
+//                set = $(self.menu_items.get().reverse());
+//            }
+//            set.each(function(index){
+//                var $item = $(this);
+//
+//                self._timeouts.push(setTimeout(function(){
+//                    $item.css({top:0,left:0});
+//                    vendorPrefixes($item,'transform','scale(.5)');
+//                }, start + Math.abs(self.options.step_in) * index));
+//            });
+//            self._timeouts.push(setTimeout(function(){
+//                if(self._state === 'closing') self.trigger('close');
+//                self._state = 'closed';
+//            },start+Math.abs(self.options.step_in) * set.length));
+//            $self.removeClass(pluginName+'-open');
+//            $self.addClass(pluginName+'-closed');
+//            self._state = 'closing';
+//            return self;
+//        };
+//        if(immediate){
+//            do_animation();
+//        }else{
+//            self._timeouts.push(setTimeout(do_animation,self.options.delay));
+//        }
+//        return this;
+//    };
     CircleMenu.prototype.select = function(index){
         var self = this,
             selected, set_other;

@@ -9,6 +9,7 @@
 	<script src="js/menu.js"></script>
 <!-- 	<script src="https://raw.github.com/Zikes/circle-menu/master/jQuery.circleMenu.js"></script> -->
 	<script type="text/javascript">
+		var isOnTop = false;
 		$(document).ready(function() {
 			//Caricamento del munu circolare
 			$('ul').circleMenu({
@@ -19,7 +20,10 @@
 			});
 			
 			$(window).scroll(function () {
-				$("#goTop").css('visibility', 'visible');
+				if(!isOnTop)
+					$("#goTop").css('visibility', 'visible');
+				else
+					$("#goTop").css('visibility', 'hidden');
 			});
 		});
 	
@@ -101,7 +105,7 @@
 				$('div#pop-up06').hide();
 			});
 		});
-	</script>
+ 	</script> 
 	<script type="text/javascript">
 		function openMenu() {
 			$('ul').circleMenu('open');
@@ -111,48 +115,57 @@
             $('html, body').animate({
                 scrollTop: 800
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function scrolling04(){
             $('html, body').animate({
                 scrollTop: 1200
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function scrolling02(){
             $('html, body').animate({
                 scrollTop: 1700
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function scrolling03(){
             $('html, body').animate({
                 scrollTop: 2700
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function scrolling08(){
             $('html, body').animate({
                 scrollTop: 3200
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function scrolling01(){
             $('html, body').animate({
                 scrollTop: 3200
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function scrolling06(){
             $('html, body').animate({
                 scrollTop: 3800
             }, 1500);
+            isOnTop=false;
 		}
 		
 		function goOnTop(){
 			$('html, body').animate({
                 scrollTop: -3500
             }, 1500);
+			isOnTop = true;
+			openMenu();
 		}
 	</script>
 	<title>HWT</title>
@@ -310,7 +323,7 @@
 		</div>
 		<div id="pagMapping">
 			<div class="generalContent">
-				MAPPING
+				<img alt="Mapping" src="img/titles/Mapping.png">
 				<div id="contentPagMapping">
 					Il Visual Thinking rappresenta la pratica di usare le immagini per comunicare in maniera chiara e intuitiva.<br>
 					Schizzi, disegni o note su post-it, per esempio, possono essere utilizzati per costruire e discutere un'idea o per risolvere problemi.<br>
@@ -320,12 +333,12 @@
 				</div>
 			</div>
 		</div>
-			<div id="goTop" style="margin-top: 500px; position: fixed; visibility: hidden; margin-left: 90%">
+			<div id="goTop" style="margin-top: 700px; position: fixed; visibility: hidden; margin-left: 92%">
 				<a href="#" onclick="goOnTop();"><img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png"></a>
 			</div>
 		<div id="pagGaming">
 			<div class="generalContent">
-				GAMING
+				<img alt="Gaming" src="img/titles/Gaminfication.png">
 				<div id="contentPagGaming">
 					Il nostro metodo di lavoro si sviluppa sulla convizione che quando le persone vengono coinvolte "giocando" diventa pi&ugrave facile per loro analizzare situazioni o individuare soluzioni.
 					Per questo i nostri strumenti  richiamano il gioco e il divertimento, e si basano su un approccio collaborativo e dinamico.
@@ -335,7 +348,9 @@
 		</div>
 		<div id="pagStrategia">
 			<div class="generalContent">
-				<div style="text-align: center;">STRATEGIA</div>
+				<div style="text-align: center;">
+					<img alt="Strategia" src="img/titles/Strategia.png">
+				</div>
 				<div id="contentPagStrategia">
 					Sia che un'organizzazione voglia esplorare un nuovo business, sia che voglia far crescerne uno gi&agrave esistente, la rappresentazione completa della strategia di business &egrave fondamentale.<br>
 					Tenuto conto di questo obiettivo, il punto di partenza &egrave per noi l'esplorazione del modello organizzativo attuale, ed in particolare l'analisi dell'identit&agrave delll'organizzazione,<br>
@@ -370,7 +385,7 @@
 		</div>
 		<div id="pagUserExperience">
 			<div class="generalContent">
-				USER-EXPERIENCE
+				<img alt="User-Experience" src="img/titles/UX.png">
 				<div id="contentPagUserExperience">
 					L'UX &egrave per noi un driver di valore e pertanto ha un ruolo centrale in tutte le fasi di contatto con il cliente. Utilizziamo template visuali, <br>
 					i"Personas", per descrivere i nostri clienti, cercando di coglierne a fondo le proccupazioni, le ambizioni, i comportamenti e la loro esperienza (CX= Customer Experience).<br>
@@ -384,7 +399,9 @@
 		<div id="pagKnowStart">
 			<div class="generalContent">
 				<div id="pagKnowHow">
-					<div style="margin-left: 34%">KNOW-HOW</div>
+					<div style="margin-left: 34%">
+						<img alt="Know-How" src="img/titles/Knowhow.png">
+					</div>
 					<div id="contentPagKnowHow">
 						<div>
 						Il valore di un'organizzazione non si misura esclusivamente dalle risorse tangibili, ma risiede soprattutto nella conoscenza,<br>
@@ -396,7 +413,9 @@
 					</div>
 				</div>
 				<div id="pagStartUp">
-					<div style="margin-left: 10%">START-UP</div>
+					<div style="margin-left: 10%">
+						<img alt="Start-Up" src="img/titles/Startup.png">
+					</div>
 					<div id="contentPagStartUp">
 						<div>
 						La Start-up nasce da un'idea, ma affinch&egrave un'idea possa essere  trasformata in business ogni suo elemento deve essere descritto e analizzato in chiave strategica.<br> 
@@ -410,7 +429,7 @@
 		</div>
 		<div id="pagBusinessModel">
 			<div class="generalContent">
-				BUSINESS<br>MODEL
+				<img alt="Business-Model" src="img/titles/Business-model.png">
 				<div id="contentPagBusinessModel">
 					Il Business Model racconta il funzionamento di un'organizzazione. Convinti che ogni persona possa apportare valore all'organizzazione secondo un<br>
 					approccio Kaizen, che incoraggia un percorso di miglioramento continuo basato sul rinnovamento a piccoli passi giorno per giorno, crediamo che la<br>
@@ -428,6 +447,32 @@
 					o risorse acquisitie all'esterno (Key Partners)
 				</div>
 			</div>
+		</div>
+		<div id="pagContatti">
+<!-- 				<img alt="Contatti" src="img/footer/Map.jpg"> -->
+				<div id="contentContatti" style="padding: 8%;">
+					<div id="blueCanvas" >
+						HWT &egrave una start-up fondata nel 2013 da un team di giovani legati dal-<br>
+						la convinzione che la vera sfida per le imprese risieda nella ricerca e<br>
+						l'esplorazione del proprio valore.<br><br>
+						
+						HWT sta per Hike + Worth ovvero "Esplorazione del valore" come<br>
+						strumento per "illuminare" il business e "scalare" il successo.<br>
+						
+						Con strumenti semplici, intuitivi, agili e innovativi aiutiamo le organiz-<br>
+						zazioni che vogliono innovarsi nella comprensione e nello sviluppo<br>
+						del proprio business fornendo un kit di conoscenze strategiche e ma-<br>
+						nageriali con un approccio non convenzionale basato sul visual thin-<br>
+						king, che permette di ottenere benefici tangibili e inaspettati.<br><br>
+						
+						Il nostro metodo si fonda sulla rappresentazione grafica, che consi-<br>
+						deriamo il modo pi&ugrave semplice e creativo per fissare concetti o rap-<br>
+						presentare problemi e idee; per questo utilizziamo strumenti derivati<br>
+						dal pensiero visuale, tra i quali il Business Model Canvas, ideato da<br>
+						Alexander Oserwalder e diffuso attraverso il libro di cui egli stesso &egrave<br>
+						autore "Business Model Generation"
+					</div>
+				</div>
 		</div>
 	</div>
 </body>
