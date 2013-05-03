@@ -18,6 +18,9 @@
 				direction : 'full'
 			});
 			
+			$(window).scroll(function () {
+				$("#goTop").css('visibility', 'visible');
+			});
 		});
 	
 		$(window).load(function() {
@@ -139,11 +142,23 @@
                 scrollTop: 3200
             }, 1500);
 		}
+		
+		function scrolling06(){
+            $('html, body').animate({
+                scrollTop: 3800
+            }, 1500);
+		}
+		
+		function goOnTop(){
+			$('html, body').animate({
+                scrollTop: -3500
+            }, 1500);
+		}
 	</script>
 	<title>HWT</title>
 	<link href="/img/Icone/favicon.png" type="image/png" />
 </head>
-<body onload="openMenu();">
+<body onload="openMenu();" style="overflow: scroll;">
 	<div id="allContent" style="display: block;">
 		<div id="containerHeader">
 <!-- 			<img id="background"> -->
@@ -268,7 +283,7 @@
 						</div>
 					</li>
 					<li class="itemCircle" id="balloon06">
-						<a href="#" id="icon06"> <img alt="Business Model"
+						<a href="#" id="icon06" onclick="scrolling06();"> <img alt="Business Model"
 							src="img/bIcon/bIcon06.png"
 							onmouseover="this.src='img/Icone/Big/Icon06b.png'"
 							onmouseout="this.src='img/bIcon/bIcon06.png'">
@@ -305,6 +320,9 @@
 				</div>
 			</div>
 		</div>
+			<div id="goTop" style="margin-top: 500px; position: fixed; visibility: hidden; margin-left: 90%">
+				<a href="#" onclick="goOnTop();"><img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png"></a>
+			</div>
 		<div id="pagGaming">
 			<div class="generalContent">
 				GAMING
@@ -387,6 +405,27 @@
 						Crediamo nell'approccio Lean Start-up, ovvero nel rilascio di modelli di business prototipali, che possano evolvere grazie a continui feedback da parte dei clienti.
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pagBusinessModel">
+			<div class="generalContent">
+				BUSINESS<br>MODEL
+				<div id="contentPagBusinessModel">
+					Il Business Model racconta il funzionamento di un'organizzazione. Convinti che ogni persona possa apportare valore all'organizzazione secondo un<br>
+					approccio Kaizen, che incoraggia un percorso di miglioramento continuo basato sul rinnovamento a piccoli passi giorno per giorno, crediamo che la<br>
+					descrizione di un modello di business debba essere condotta attraverso il supporto di tutti, ed &egrave pertanto necessario che ci sia una  comprensione<br>
+					condivisa di ci&ograve che &egrave realmente un modello di business.<br>
+					Il Business Model Canvas risponde a queste necessit&agrave, essendo un template  visuale che  favorisce la comprensione del modello di business, rendendolo<br>
+					un concetto facilmente accessibile a tutti e facilitando così la discussione.<br>
+					Attraverso questo strumento &egrave possibile descrivere la logica in base alla quale un'organizzazione crea, distribuisce e cattura valore, lavorando su<br>
+					quattro principali aree di business: i clienti, l'offerta, le infrastrutture e la solidità finanziaria.<br>
+					La parte centrale del Business Model Canvas identifica il valore offerto al cliente (Value Proposition) e rappresenta alcuni degli aspetti di maggior importanza<br>
+					per il business model, come i clienti target (Customer Segment), i flussi di ricavi che derivano dal valore offerto ai clienti (Revenue Streams) e gli elementi<br>
+					che determinano la struttura dei costi (Cost Structure).<br>
+					Il valore raggiunge il cliente attraverso i canali (Channels), e la comunicazione valore/cliente è rappresentata dalle relazioni stabilite con ciascun segmento<br>
+					della clientela (Customer Relationships). Il valore viene generato da risorse (Key Resources) e attività chiave (Key Activities) e  da partnership chiave nel caso di ousourcing<br>
+					o risorse acquisitie all'esterno (Key Partners)
 				</div>
 			</div>
 		</div>

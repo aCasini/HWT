@@ -11,7 +11,7 @@ body {
 }
 
 #containerHeader {
-	height: 98%;
+	height: 1000px;
 	width: 100%;
 	background-image: url('../img/Background.jpg');
 	position: absolute;
@@ -381,7 +381,7 @@ div#bContent {
 #infoDitta{
 	display: block; 
 	text-align: center; 
-	margin-top: 50%; 
+	margin-top: 950px; 
 	margin-left: 33%;
 	position: absolute;
 	font-family: helvetica;
