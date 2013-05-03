@@ -37,6 +37,13 @@
 		$(window).load(function() {
 			//Setting z-index Balloons
 			$("#centerId").css('z-index', '1');
+			
+			//Controllo se il browser è safari
+			if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
+			   $(".centerItem").css('margin-top', '34%');
+			   $(".itemCircle").css('margin-top', '36%');
+			   $(".itemCircle").css('margin-left', '44%');
+			}
 		});
 		
 		//Funzione di over sui Balloons
@@ -409,7 +416,7 @@
 					L'UX &egrave per noi un driver di valore e pertanto ha un ruolo centrale in tutte le fasi di contatto con il cliente. Utilizziamo template visuali, <br>
 					i"Personas", per descrivere i nostri clienti, cercando di coglierne a fondo le proccupazioni, le ambizioni, i comportamenti e la loro esperienza (CX= Customer Experience).<br>
 					I"Personas" sono quindi il nostro framework di riferimento per esplorare il valore del cliente.<br>
-					 Gli scenari che mostrano l'interazione tra i clienti e i servizi &egrave guidata step by step dalla Customer Journey Map, che fornisce un supporto visuale che facilita la comprensione e la sequenza delle attività e delle vulnerabilità che caratterizza la service experience.<br>
+					 Gli scenari che mostrano l'interazione tra i clienti e i servizi &egrave guidata step by step dalla Customer Journey Map, che fornisce un supporto visuale che facilita la comprensione e la sequenza delle attivit�� e delle vulnerabilit�� che caratterizza la service experience.<br>
 					 Le decisioni sono guidate dai feedback progressivi forniti direttamente dai clienti.<br>
 					La combinazione di User Experience &egrave Strategia &egrave la chiave per la scoperta del valore dei nostro clienti.
 				</div>
@@ -438,7 +445,7 @@
 					<div id="contentPagStartUp" class="span8">
 						<div>
 						La Start-up nasce da un'idea, ma affinch&egrave un'idea possa essere  trasformata in business ogni suo elemento deve essere descritto e analizzato in chiave strategica.<br> 
-						HWT &egrave una start-up, e come tale conosce le condizioni di estrema incertezza e di vulnerabilità in cui si muovono questo tipo di organizzazioni.<br>
+						HWT &egrave una start-up, e come tale conosce le condizioni di estrema incertezza e di vulnerabilit�� in cui si muovono questo tipo di organizzazioni.<br>
 						Abbiamo potuto testare su noi stessi i benefici dell'utilizzo del Business Model Canvas, per l'esplorazione e la descrizione del nostro modello di business.<br> 
 						Crediamo nell'approccio Lean Start-up, ovvero nel rilascio di modelli di business prototipali, che possano evolvere grazie a continui feedback da parte dei clienti.
 						</div>
@@ -457,14 +464,14 @@
 					descrizione di un modello di business debba essere condotta attraverso il supporto di tutti, ed &egrave pertanto necessario che ci sia una  comprensione<br>
 					condivisa di ci&ograve che &egrave realmente un modello di business.<br>
 					Il Business Model Canvas risponde a queste necessit&agrave, essendo un template  visuale che  favorisce la comprensione del modello di business, rendendolo<br>
-					un concetto facilmente accessibile a tutti e facilitando così la discussione.<br>
+					un concetto facilmente accessibile a tutti e facilitando cos�� la discussione.<br>
 					Attraverso questo strumento &egrave possibile descrivere la logica in base alla quale un'organizzazione crea, distribuisce e cattura valore, lavorando su<br>
-					quattro principali aree di business: i clienti, l'offerta, le infrastrutture e la solidità finanziaria.<br>
+					quattro principali aree di business: i clienti, l'offerta, le infrastrutture e la solidit�� finanziaria.<br>
 					La parte centrale del Business Model Canvas identifica il valore offerto al cliente (Value Proposition) e rappresenta alcuni degli aspetti di maggior importanza<br>
 					per il business model, come i clienti target (Customer Segment), i flussi di ricavi che derivano dal valore offerto ai clienti (Revenue Streams) e gli elementi<br>
 					che determinano la struttura dei costi (Cost Structure).<br>
-					Il valore raggiunge il cliente attraverso i canali (Channels), e la comunicazione valore/cliente è rappresentata dalle relazioni stabilite con ciascun segmento<br>
-					della clientela (Customer Relationships). Il valore viene generato da risorse (Key Resources) e attività chiave (Key Activities) e  da partnership chiave nel caso di ousourcing<br>
+					Il valore raggiunge il cliente attraverso i canali (Channels), e la comunicazione valore/cliente �� rappresentata dalle relazioni stabilite con ciascun segmento<br>
+					della clientela (Customer Relationships). Il valore viene generato da risorse (Key Resources) e attivit�� chiave (Key Activities) e  da partnership chiave nel caso di ousourcing<br>
 					o risorse acquisitie all'esterno (Key Partners)
 				</div>
 			</div>

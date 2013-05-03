@@ -107,7 +107,7 @@
             self.element.on('mouseenter',function(evt){
                 self.open();
             }).on('mouseleave',function(evt){
-                self.close();
+                // self.close();
             });
         }else if(self.options.trigger === 'click'){
             self.element.children('li:first-child').on('click',function(evt){
@@ -115,7 +115,7 @@
                 if(self._state === 'closed' || self._state === 'closing'){
                     self.open();
                 }else{
-                    self.close(true);
+                    // self.close(true);
                 }
                 return false;
             });
@@ -262,8 +262,9 @@
             var obj = $.data(this, 'plugin_'+pluginName),
                 commands = {
                 'init':function(){obj.init();},
-                'open':function(){obj.open();},
-                'close':function(){obj.close(true);}
+                'open':function(){obj.open();}
+                // ,'close':function(){obj.close(true);
+                }
             };
             if(typeof options === 'string' && obj && commands[options]){
                 commands[options]();
