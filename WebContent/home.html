@@ -12,7 +12,17 @@
 	   <script src="js/menu.js"></script>
 	<![endif]>
 	<![if IE]>
-	   <script src="js/menuIE.js"></script>
+	   <script type="text/javascript">
+	   if (navigator.appName == 'Microsoft Internet Explorer'){
+			var el = document.createElement('script');
+			el.async = false;
+			el.src = "js/menuIE.js";
+			el.type = 'text/javascript';
+			
+			(document.getElementsByTagName('HEAD')[0]||document.body).appendChild(el);
+		}
+	   </script>
+<!-- 	   <script src="js/menuIE.js"></script> -->
 	<![endif]>
 	
 	<script type="text/javascript">
@@ -43,6 +53,11 @@
 			   $(".centerItem").css('margin-top', '34%');
 			   $(".itemCircle").css('margin-top', '36%');
 			   $(".itemCircle").css('margin-left', '44%');
+			}
+			
+			if (navigator.userAgent.match(/AppleWebKit/) && navigator.userAgent.match(/Chrome/)) {
+// 				$(".itemCircle").css('img05', 'auto');
+// 				$(".itemCircle").css('img05', '100%');
 			}
 		});
 		
@@ -215,7 +230,7 @@
 							</div>
 						</div>
 						<a href="#" id="icon05" onclick="scrolling05();">
-							 <img alt="Mapping" src="img/bIcon/bIcon05.png"
+							 <img alt="Mapping" src="img/bIcon/bIcon05.png" id="img05"
 								onmouseover="this.src='img/Icone/Big/Icon05b.png'"
 								onmouseout="this.src='img/bIcon/bIcon05.png'">
 						</a> <!-- HIDDEN / POP-UP DIV -->

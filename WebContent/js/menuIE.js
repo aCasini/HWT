@@ -262,7 +262,7 @@
             var obj = $.data(this, 'plugin_'+pluginName),
                 commands = {
                 'init':function(){obj.init();},
-                'open':function(){obj.open();}
+                'open':function(){obj.open();
                 // ,'close':function(){obj.close(true);
                 }
             };
