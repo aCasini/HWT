@@ -23,37 +23,41 @@
 	/* 	margin-top: 55.6%; */
 	font-family: helvetica;
 	font-size: small;
-	margin-right: 28%;
+/* 	margin-right: 28%; */
 	color: #858688;
 	line-height: 28px;
 	text-align: left;
-	margin-top: 20px;
-	margin-bottom: 20px;
+/* 	margin-top: 20px; */
+/* 	margin-bottom: 20px; */
+	padding: 1%;
 }
 
 #pagGaming {
-	width: 100%;
-	float: left;
-/* 	margin-top: 3%; */
-	background-color: white;
-	font-family: helvetica;
-	font-size: 50px;
-	font-weight: bolder;
-	/* 	margin-left: 15%; */
-	color: #ed7909;
-}
-
-#contentPagGaming {
-	width: 50%;
+/* 		width: 50%; */
 	float: right;
 	/* 	margin-top: 55.6%; */
 	font-family: helvetica;
 	font-size: small;
-	margin-right: 28%;
+/* 	margin-right: 28%; */
 	color: #858688;
 	line-height: 28px;
 	text-align: left;
-	margin-top: 20px;
+/* 	margin-top: 20px; */
+/* 	margin-bottom: 20px; */
+	padding: 1%;
+}
+
+#contentPagGaming {
+/* 	width: 100%; */
+	float: right;
+	/* 	margin-top: 55.6%; */
+	font-family: helvetica;
+	font-size: small;
+/* 	margin-right: 28%; */
+	color: #858688;
+	line-height: 28px;
+	text-align: left;
+/* 	margin-top: 20px; */
 }
 
 #pagStrategia {
