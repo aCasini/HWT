@@ -16,7 +16,7 @@ body {
 	background-image: url('../img/Background.jpg');
 	position: absolute;
 	z-index: -1;
-	float: left; 
+	float: left;
 }
 
 .itemCircle {
@@ -35,7 +35,7 @@ body {
 	border-bottom-left-radius: 200px;
 	-webkit-transform: scale(0.5);
 	-webkit-transition: all 500ms ease;
-	margin-left: 45%;
+	margin-left: 47%;
 	margin-top: 21%;
 }
 
@@ -52,7 +52,7 @@ body {
 	border-bottom-right-radius: 100px;
 	border-bottom-left-radius: 100px;
 	-webkit-transition: all 500ms ease;
-	margin-top: 19%;
+	margin-top: 17.5%;
 }
 /* ---------------*/
 /* Mapping Ballon */
