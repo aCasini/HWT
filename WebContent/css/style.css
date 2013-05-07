@@ -1,22 +1,25 @@
 /*
 	   style.css
 	   HWT
-	   Created by Kasoale on 2013-04-29.
 	   Copyright 2013 Phoops. All rights reserved.
 	*/
 body {
 	display: block;
 	margin: 0px;
-/* 	background-color: #f0f0f0; */
 }
 
 #containerHeader {
-	height: 885px;
-	width: 100%;
 	background-image: url('../img/Background.jpg');
+}
+
+#containerHeader ul {
+	top: 290px;
+	left: 45%;
 	position: absolute;
-	z-index: -1;
-	float: left;
+}
+
+#ex-timing {
+	height: 700px;	
 }
 
 .itemCircle {
@@ -27,19 +30,19 @@ body {
 	line-height: 200px;
 	position: absolute;
 	z-index: 1;
-	top: 0px;
-	left: 0px;
+	top: 150px;
+	left: 50%;
 	border-top-left-radius: 200px;
 	border-top-right-radius: 200px;
 	border-bottom-right-radius: 200px;
 	border-bottom-left-radius: 200px;
 	-webkit-transform: scale(0.5);
 	-webkit-transition: all 500ms ease;
-	margin-left: 47%;
-	margin-top: 20%;
 }
 
 .centerItem {
+	top: 0px;
+	left:0px;
 	display: block;
 	width: 100px;
 	height: 100px;
@@ -52,7 +55,6 @@ body {
 	border-bottom-right-radius: 100px;
 	border-bottom-left-radius: 100px;
 	-webkit-transition: all 500ms ease;
-	margin-top: 17%;
 }
 /* ---------------*/
 /* Mapping Ballon */
@@ -62,11 +64,7 @@ div#pop-up05 {
 	position: absolute;
 	width: 500px;
 	height: 100px;
-/* 	padding: 10px; */
-/* 	background: #eeeeee; */
 	color: #000000;
-/* 	border: 1px solid #1a1a1a; */
-/* 	font-size: 40%; */
 	z-index: 2222;
 	margin-left: 160px;
 	text-align: left;
@@ -83,7 +81,6 @@ div#mapping {
 
 div#mContent {
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -102,11 +99,7 @@ div#pop-up04 {
 	position: absolute;
 	width: 500px;
 	height: 100px;
-/* 	padding: 10px; */
-/* 	background: #eeeeee; */
 	color: #000000;
-/* 	border: 1px solid #1a1a1a; */
-/* 	font-size: 40%; */
 	z-index: 2222;
 	margin-left: 160px;
 	text-align: left;
@@ -123,7 +116,6 @@ div#gaming {
 
 div#gContent {
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -142,11 +134,7 @@ div#pop-up02 {
 	position: absolute;
 	width: 500px;
 	height: 100px;
-/* 	padding: 10px; */
-/* 	background: #eeeeee; */
 	color: #000000;
-/* 	border: 1px solid #1a1a1a; */
-/* 	font-size: 40%; */
 	z-index: 2222;
 	margin-left: 160px;
 	text-align: left;
@@ -154,7 +142,6 @@ div#pop-up02 {
 
 div#strategia {
 	z-index: 2222;
-/* 	margin-left: 250px; */
 	font-family: helvetica;
 	font-size: x-large;
 	color: #ed7909;	
@@ -163,7 +150,6 @@ div#strategia {
 
 div#sContent {
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -182,11 +168,7 @@ div#pop-up03 {
 	position: absolute;
 	width: 500px;
 	height: 100px;
-/* 	padding: 10px; */
-/* 	background: #eeeeee; */
 	color: #000000;
-/* 	border: 1px solid #1a1a1a; */
-/* 	font-size: 40%; */
 	z-index: 2222;
 	margin-left: 160px;
 	text-align: left;
@@ -203,7 +185,6 @@ div#user {
 
 div#uContent {
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -222,11 +203,7 @@ div#pop-up07 {
 	position: absolute;
 	width: 500px;
 	height: 100px;
-/* 	padding: 10px; */
-/* 	background: #eeeeee; */
 	color: #000000;
-/* 	border: 1px solid #1a1a1a; */
-/* 	font-size: 40%; */
 	z-index: 2222;
 	margin-left: 160px;
 	text-align: left;
@@ -235,7 +212,6 @@ div#pop-up07 {
 
 div#contatti {
 	z-index: 2222;
-/* 	margin-left: 250px; */
 	font-family: helvetica;
 	font-size: x-large;
 	color: #469f2a;	
@@ -244,7 +220,6 @@ div#contatti {
 
 div#cContent {
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -275,7 +250,6 @@ div#pop-up08 {
 div#konoscenza {
 	text-align: right;
 	z-index: 2222;
-/* 	margin-left: 250px; */
 	font-family: helvetica;
 	font-size: x-large;
 	color: #307ebc;	
@@ -285,7 +259,6 @@ div#konoscenza {
 div#kContent {
 	text-align: right;
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -316,7 +289,6 @@ div#pop-up01 {
 div#startup {
 	text-align: right;
 	z-index: 2222;
-/* 	margin-left: 250px; */
 	font-family: helvetica;
 	font-size: x-large;
 	color: #307ebc;	
@@ -326,7 +298,6 @@ div#startup {
 div#startContent {
 	text-align: right;
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -357,7 +328,6 @@ div#pop-up06 {
 div#business {
 	text-align: right;
 	z-index: 2222;
-/* 	margin-left: 250px; */
 	font-family: helvetica;
 	font-size: x-large;
 	color: #307ebc;	
@@ -367,7 +337,6 @@ div#business {
 div#bContent {
 	text-align: right;
 	z-index: 2222;
-/* 	margin-left: 300px; */
 	font-family: helvetica;
 	font-size: small;
 	color: #858688;
@@ -381,9 +350,6 @@ div#bContent {
 #infoDitta{
 	display: block; 
 	text-align: center; 
-	margin-top: 800px; 
-/* 	margin-left: 33%; */
-	position: absolute;
 	font-family: helvetica;
 	font-size: small;
 	color: #b2b3b6;
