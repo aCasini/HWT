@@ -62,12 +62,13 @@ body {
 div#pop-up05 {
 	display: none;
 	position: absolute;
-/* 	width: 500px; */
+ 	width: 500px; 
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
-	margin-left: 160px;
+/*	margin-left: -60px;*/ 
 	text-align: left;
+	padding-bottom: 20px;
 }
 
 div#mapping {

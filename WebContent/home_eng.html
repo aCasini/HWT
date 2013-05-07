@@ -55,12 +55,12 @@
 				//Setting z-index Balloons
 				$("#centerId").css('z-index', '1');
 
-				//Controllo se il browser è safari
+				//Controllo se il browser �� safari
 				if (navigator.userAgent.match(/AppleWebKit/)
 						&& !navigator.userAgent.match(/Chrome/)) {
-					$(".centerItem").css('margin-top', '34%');
-					$(".itemCircle").css('margin-top', '36%');
-					$(".itemCircle").css('margin-left', '44%');
+					//$(".centerItem").css('margin-top', '34%');
+					//$(".itemCircle").css('margin-top', '36%');
+					//$(".itemCircle").css('margin-left', '44%');
 				}
 
 				if (navigator.userAgent.match(/AppleWebKit/)
@@ -208,9 +208,9 @@
 	function goOnTop() {
 		if (navigator.userAgent.match(/AppleWebKit/)
 				&& !navigator.userAgent.match(/Chrome/)) {
-			$(".centerItem").css('margin-top', '34%');
-			$(".itemCircle").css('margin-top', '36%');
-			$(".itemCircle").css('margin-left', '44%');
+			//$(".centerItem").css('margin-top', '34%');
+			//$(".itemCircle").css('margin-top', '36%');
+			//$(".itemCircle").css('margin-left', '44%');
 		}
 		$('html, body').animate({
 			scrollTop : -3500
@@ -240,8 +240,8 @@
 					</table>
 				</div>
 			</div>
-			<div class="row" style="position: fixed;">
-				<div class="span1 offset12" style="padding: 2px;">
+			<div class="row-fluid" style="position: fixed;">
+				<div class="span1 offset11" style="padding: 2px;>
 					<a href="#" onclick="goOnTop();" style="visibility: hidden;" id="goTop">
 						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png">
 					</a>

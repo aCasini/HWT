@@ -58,9 +58,9 @@
 				//Controllo se il browser è safari
 				if (navigator.userAgent.match(/AppleWebKit/)
 						&& !navigator.userAgent.match(/Chrome/)) {
-					$(".centerItem").css('margin-top', '34%');
-					$(".itemCircle").css('margin-top', '36%');
-					$(".itemCircle").css('margin-left', '44%');
+					//$(".centerItem").css('margin-top', '34%');
+					//$(".itemCircle").css('margin-top', '36%');
+					//$(".itemCircle").css('margin-left', '44%');
 				}
 
 				if (navigator.userAgent.match(/AppleWebKit/)
@@ -208,9 +208,9 @@
 	function goOnTop() {
 		if (navigator.userAgent.match(/AppleWebKit/)
 				&& !navigator.userAgent.match(/Chrome/)) {
-			$(".centerItem").css('margin-top', '34%');
-			$(".itemCircle").css('margin-top', '36%');
-			$(".itemCircle").css('margin-left', '44%');
+			//$(".centerItem").css('margin-top', '34%');
+			//$(".itemCircle").css('margin-top', '36%');
+			//$(".itemCircle").css('margin-left', '44%');
 		}
 		$('html, body').animate({
 			scrollTop : -3500
@@ -260,8 +260,8 @@
 							</a>
 						</li>
 						<li class="itemCircle" id="balloon05">
-							<div id="pop-up05">
-								<div id="mapping">
+							<div id="pop-up05" class="row" style="margin-bottom: 20px;">
+								<div id="mapping" class="span4">
 									<b>Comunica attraverso le immagini</b>
 <!-- 									<div id="mContent"> -->
 										<!-- 									Mappa, Template Visuali, Visual thinking, Disegno, Canvas, Chiaro,<br>  -->
@@ -274,7 +274,6 @@
 								<a href="#" id="icon05" onclick="scrolling05();"> 
 									<img
 									alt="Mapping" src="img/bIcon/bIcon05.png" id="img05"
-									title="Comunica attraverso le immagini"
 									onmouseover="this.src='img/Icone/Big/Icon05b.png'"
 									onmouseout="this.src='img/bIcon/bIcon05.png'">
 								</a> <!-- HIDDEN / POP-UP DIV -->
@@ -642,7 +641,7 @@
 					</div>
 					<div class="hero-unit" id="hearoUnitFooter">
 						<div id="" class="row">
-							<div id="blueCanvas" class="span8">
+							<div id="blueCanvas" class="span5 offset2">
 								HWT &egrave una start-up fondata nel 2013 da un team di giovani
 								legati dal- la convinzione che la vera sfida per le imprese
 								risieda nella ricerca e l'esplorazione del proprio valore.<br>

@@ -142,17 +142,21 @@
 
 #blueCanvas {
 	background-image: url('../img/footer/Box01.jpg');
+	background-repeat:no-repeat;
 	padding: 15px;
+	background-size: 100%; 100%;
 	font-family: helvetica;
 	font-size: small;
 	color: white;
+	line-height: 20px;
 }
 
 #greenCanvas {
 	background-image: url('../img/footer/Box02.jpg');
 	font-family: helvetica;
-	line-height: 28px;
+	line-height: 20px;
 	font-size: medium;
+	padding: 15px;
 	color: white;
 	margin-top: 280px;
 	text-align: center;
