@@ -19,7 +19,7 @@ body {
 }
 
 #ex-timing {
-	height: 700px;	
+	height: 800px;	
 }
 
 .itemCircle {
@@ -62,8 +62,8 @@ body {
 div#pop-up05 {
 	display: none;
 	position: absolute;
-	width: 500px;
-	height: 100px;
+/* 	width: 500px; */
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	margin-left: 160px;
@@ -74,7 +74,7 @@ div#mapping {
 	z-index: 2222;
 /* 	margin-left: 250px; */
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #469f2a;	
 	line-height: 20px;
 }
@@ -97,8 +97,8 @@ div#mContent {
 div#pop-up04 {
 	display: none;
 	position: absolute;
-	width: 500px;
-	height: 100px;
+/* 	width: 500px; */
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	margin-left: 160px;
@@ -109,7 +109,7 @@ div#gaming {
 	z-index: 2222;
 /* 	margin-left: 250px; */
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #ed7909;	
 	line-height: 20px;
 }
@@ -132,8 +132,8 @@ div#gContent {
 div#pop-up02 {
 	display: none;
 	position: absolute;
-	width: 500px;
-	height: 100px;
+/* 	width: 500px; */
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	margin-left: 160px;
@@ -143,7 +143,7 @@ div#pop-up02 {
 div#strategia {
 	z-index: 2222;
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #ed7909;	
 	line-height: 20px;
 }
@@ -166,8 +166,8 @@ div#sContent {
 div#pop-up03 {
 	display: none;
 	position: absolute;
-	width: 500px;
-	height: 100px;
+/* 	width: 500px; */
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	margin-left: 160px;
@@ -178,7 +178,7 @@ div#user {
 	z-index: 2222;
 /* 	margin-left: 250px; */
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #ed7909;	
 	line-height: 20px;
 }
@@ -201,8 +201,8 @@ div#uContent {
 div#pop-up07 {
 	display: none;
 	position: absolute;
-	width: 500px;
-	height: 100px;
+/* 	width: 500px; */
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	margin-left: 160px;
@@ -213,7 +213,7 @@ div#pop-up07 {
 div#contatti {
 	z-index: 2222;
 	font-family: helvetica;
-	font-size: x-large;
+	font-size:large;
 	color: #469f2a;	
 	line-height: 20px;
 }
@@ -234,24 +234,24 @@ div#cContent {
 /* Conoscenza Balloon */
 /* ------------------ */
 div#pop-up08 {
-	text-align: right;
+/* 	text-align: right; */
 	display: none;
 	position: absolute;
-	width: 400px;
-	height: 100px;
+	width: 100px;
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	float: left;
 	text-align: left;
 	margin-top: -110%;;
-	margin-left: -420px;
+	margin-left: -120px;
 }
 
 div#konoscenza {
-	text-align: right;
+/* 	text-align: right; */
 	z-index: 2222;
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #307ebc;	
 	line-height: 20px;
 }
@@ -273,24 +273,24 @@ div#kContent {
 /* Start-up Balloon */
 /* ---------------- */
 div#pop-up01 {
-	text-align: right;
+/* 	text-align: right; */
 	display: none;
 	position: absolute;
-	width: 400px;
-	height: 100px;
+	width: 100px;
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	float: left;
 	text-align: left;
 	margin-top: -90%;;
-	margin-left: -420px;
+	margin-left: -120px;
 }
 
 div#startup {
-	text-align: right;
+/* 	text-align: right; */
 	z-index: 2222;
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #307ebc;	
 	line-height: 20px;
 }
@@ -312,24 +312,24 @@ div#startContent {
 /* Business-Model Balloon */
 /*------ ---------------- */
 div#pop-up06 {
-	text-align: right;
+/* 	text-align: right; */
 	display: none;
 	position: absolute;
-	width: 400px;
-	height: 100px;
+	width: 100px;
+/* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
 	float: left;
 	text-align: left;
 	margin-top: -100%;;
-	margin-left: -420px;
+	margin-left: -120px;
 }
 
 div#business {
-	text-align: right;
+/* 	text-align: right; */
 	z-index: 2222;
 	font-family: helvetica;
-	font-size: x-large;
+	font-size: large;
 	color: #307ebc;	
 	line-height: 20px;
 }

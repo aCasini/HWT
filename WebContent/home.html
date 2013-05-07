@@ -37,7 +37,7 @@
 		//Caricamento del munu circolare
 		$('ul').circleMenu({
 			item_diameter : 150,
-			circle_radius : 240,
+			circle_radius : 280,
 			'transition_function' : 'linear',
 			direction : 'full'
 		});
@@ -151,56 +151,56 @@
 
 	function scrolling05() {
 		$('html, body').animate({
-			scrollTop : 800
+			scrollTop : $('#heroMapping').offset().top 
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling04() {
 		$('html, body').animate({
-			scrollTop : 1200
+			scrollTop : $('#hearoUnitGame').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling02() {
 		$('html, body').animate({
-			scrollTop : 1500
+			scrollTop : $('#heroStrategia').offset().top 
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling03() {
 		$('html, body').animate({
-			scrollTop : 2500
+			scrollTop : $('#heroUnitUX').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
-
+	
 	function scrolling08() {
 		$('html, body').animate({
-			scrollTop : 3000
+			scrollTop : $('#hearoUnitKS').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling01() {
 		$('html, body').animate({
-			scrollTop : 3000
+			scrollTop : $('#hearoUnitKS').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
-
+	
 	function scrolling06() {
 		$('html, body').animate({
-			scrollTop : 3600
+			scrollTop : $('#hearoUnitBM').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling07() {
 		$('html, body').animate({
-			scrollTop : 4200
+			scrollTop : $('#hearoUnitFooter').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
@@ -240,27 +240,46 @@
 					</table>
 				</div>
 			</div>
+			<div class="row" style="position: fixed;">
+				<div class="span1 offset12" style="padding: 2px;">
+					<a href="#" onclick="goOnTop();" style="visibility: hidden;" id="goTop">
+						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png">
+					</a>
+				</div>
+			</div>
 			<div class="row">
-
 				<div align="center" id="ex-timing" class="span12">
 					<ul>
-						<li class="centerItem" id="centerId"><a href="#"><img
-								alt="Logo HWT" src="img/Logo.png"></a></li>
+						<li class="centerItem" id="centerId">
+							<a href="#">
+<!-- 								<div class="row"> -->
+<!-- 									<div class="span2"> -->
+									<img alt="Logo HWT" src="img/Logo.png">
+<!-- 									</div> -->
+<!-- 								</div> -->
+							</a>
+						</li>
 						<li class="itemCircle" id="balloon05">
 							<div id="pop-up05">
 								<div id="mapping">
 									<b>Comunica attraverso le immagini</b>
-									<div id="mContent">
+<!-- 									<div id="mContent"> -->
 										<!-- 									Mappa, Template Visuali, Visual thinking, Disegno, Canvas, Chiaro,<br>  -->
 										<!-- 									Intuitivo, Back Napkin, Grafica, Infografica, Il potere delle immagini -->
-									</div>
+<!-- 									</div> -->
 								</div>
-							</div> <a href="#" id="icon05" onclick="scrolling05();"> <img
-								alt="Mapping" src="img/bIcon/bIcon05.png" id="img05"
-								title="Comunica attraverso le immagini"
-								onmouseover="this.src='img/Icone/Big/Icon05b.png'"
-								onmouseout="this.src='img/bIcon/bIcon05.png'">
-						</a> <!-- HIDDEN / POP-UP DIV -->
+							</div> 
+<!-- 							<div class="row"> -->
+<!-- 								<div class="span2"> -->
+								<a href="#" id="icon05" onclick="scrolling05();"> 
+									<img
+									alt="Mapping" src="img/bIcon/bIcon05.png" id="img05"
+									title="Comunica attraverso le immagini"
+									onmouseover="this.src='img/Icone/Big/Icon05b.png'"
+									onmouseout="this.src='img/bIcon/bIcon05.png'">
+								</a> <!-- HIDDEN / POP-UP DIV -->
+<!-- 								</div> -->
+<!-- 							</div> -->
 						</li>
 						<li class="itemCircle" id="balloon04">
 							<div id="pop-up04">
@@ -284,7 +303,7 @@
 									<!-- 									Toolkit, direzione, posizionamento strategico,<br> -->
 									<!-- 									marketing strategico -->
 									<!-- 								</div> -->
-									<div id="sContent"></div>
+<!-- 									<div id="sContent"></div> -->
 
 								</div>
 							</div> <a href="#" id="icon02" onclick="scrolling02();"> <img
@@ -326,7 +345,7 @@
 							<div id="pop-up08">
 								<div id="konoscenza">
 									<b>Valorizza le tue conoscenze</b>
-									<div id="kContent"></div>
+<!-- 									<div id="kContent"></div> -->
 								</div>
 							</div></li>
 						<li class="itemCircle" id="balloon01"><a href="#" id="icon01"
@@ -338,7 +357,7 @@
 							<div id="pop-up01">
 								<div id="startup">
 									<b>Dai vita alla tua idea</b>
-									<div id="startContent"></div>
+<!-- 									<div id="startContent"></div> -->
 								</div>
 							</div></li>
 						<li class="itemCircle" id="balloon06"><a href="#" id="icon06"
@@ -356,6 +375,13 @@
 					</ul>
 				</div>
 			</div>
+<!-- 			<div class="row" style="position: fixed;"> -->
+<!-- 				<div class="span1 offset12" style="padding: 2px;"> -->
+<!-- 					<a href="#" onclick="goOnTop();" style="visibility: hidden;" id="goTop"> -->
+<!-- 						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png"> -->
+<!-- 					</a> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
 			<div class="row">
 				<div id="infoDitta" class="span8 offset4">
 					<div class="spa">HWT s.r.l. - Via Francesco Domenico
@@ -366,7 +392,7 @@
 		<div id='main' role='main'>
 			<div class='container' id="containerBootstrap">
 				<div class='content'>
-					<div class="hero-unit">
+					<div class="hero-unit" id="heroMapping">
 						<div id="pagMapping" class="row">
 							<div class="span4">
 								<img id="imgMapping" alt="Mapping" src="img/titles/Mapping.png">
@@ -392,12 +418,6 @@
 								&egrave il modo con cui visualizzare le idee, come suggerisce
 								Dam Roam nel libro "The Back of the Napking (2008).</div>
 						</div>
-					</div>
-					<div id="goTop"
-						style="margin-top: 700px; position: fixed; visibility: hidden; margin-left: 92%"
-						class="row-fluid">
-						<a href="#" onclick="goOnTop();"><img title="Go on Top"
-							alt="Go On Top" src="img/Icone/goTop_small.png"></a>
 					</div>
 					<div class="hero-unit" id="hearoUnitGame">
 						<div class="row" style="text-align: center;">
@@ -432,10 +452,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="hero-unit">
+					<div class="hero-unit" id="heroStrategia">
 						<div class="row">
 							<div class="span12" style="text-align: center;">
-								<img alt="Strategia" src="img/titles/Strategia.png" id="rosImgStra">
+								<img alt="Strategia" src="img/titles/Strategia.png"
+									id="rosImgStra">
 							</div>
 						</div>
 						<div id="pagStrategia" class="row">
@@ -476,7 +497,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="hero-unit" id="hearoUnitUX">
+					<div class="hero-unit" id="heroUnitUX">
 						<div class="row">
 							<div class="span6 offset2">
 								<img alt="User-Experience" src="img/titles/UX.png" id="rowImgUX">
@@ -571,56 +592,56 @@
 
 						</div>
 					</div>
-				</div>
-				<div class="hero-unit" id="hearoUnitBM">
-					<div class="row">
-						<div class="span12" id="rowImgBM">
-							<img alt="Business-Model" src="img/titles/Business-model.png">
+
+					<div class="hero-unit" id="hearoUnitBM">
+						<div class="row">
+							<div class="span12" id="rowImgBM">
+								<img alt="Business-Model" src="img/titles/Business-model.png">
+							</div>
 						</div>
-					</div>
-					<div id="pagBusinessModel" class="row">
+						<div id="pagBusinessModel" class="row">
 							<div id="contentPagBusinessModel" class="span8">
-									Il Business Model racconta il funzionamento di
-									un'organizzazione. Convinti che ogni persona possa apportare
-									valore all'organizzazione secondo un approccio Kaizen, che
-									incoraggia un percorso di miglioramento continuo basato sul
-									rinnovamento a piccoli passi giorno per giorno, crediamo che la
-									descrizione di un modello di business debba essere condotta
-									attraverso il supporto di tutti, ed &egrave pertanto necessario
-									che ci sia una comprensione condivisa di ci&ograve che &egrave
-									realmente un modello di business.<br> Il Business Model
-									Canvas risponde a queste necessit&agrave, essendo un template
-									visuale che favorisce la comprensione del modello di business,
-									rendendolo un concetto facilmente accessibile a tutti e
-									facilitando cos&igrave la discussione.<br> Attraverso
-									questo strumento &egrave possibile descrivere la logica in base
-									alla quale un'organizzazione crea, distribuisce e cattura
-									valore, lavorando su quattro principali aree di business: i
-									clienti, l'offerta, le infrastrutture e la solidit&agrave
-									finanziaria.<br> La parte centrale del Business Model
-									Canvas identifica il valore offerto al cliente (Value
-									Proposition) e rappresenta alcuni degli aspetti di maggior
-									importanza per il business model, come i clienti target
-									(Customer Segment), i flussi di ricavi che derivano dal valore
-									offerto ai clienti (Revenue Streams) e gli elementi che
-									determinano la struttura dei costi (Cost Structure).<br>
-									Il valore raggiunge il cliente attraverso i canali (Channels),
-									e la comunicazione valore/cliente &egrave rappresentata dalle
-									relazioni stabilite con ciascun segmento della clientela
-									(Customer Relationships). Il valore viene generato da risorse
-									(Key Resources) e attivit&agrave chiave (Key Activities) e da
-									partnership chiave nel caso di ousourcing o risorse acquisitie
-									all'esterno (Key Partners)
+								Il Business Model racconta il funzionamento di
+								un'organizzazione. Convinti che ogni persona possa apportare
+								valore all'organizzazione secondo un approccio Kaizen, che
+								incoraggia un percorso di miglioramento continuo basato sul
+								rinnovamento a piccoli passi giorno per giorno, crediamo che la
+								descrizione di un modello di business debba essere condotta
+								attraverso il supporto di tutti, ed &egrave pertanto necessario
+								che ci sia una comprensione condivisa di ci&ograve che &egrave
+								realmente un modello di business.<br> Il Business Model
+								Canvas risponde a queste necessit&agrave, essendo un template
+								visuale che favorisce la comprensione del modello di business,
+								rendendolo un concetto facilmente accessibile a tutti e
+								facilitando cos&igrave la discussione.<br> Attraverso
+								questo strumento &egrave possibile descrivere la logica in base
+								alla quale un'organizzazione crea, distribuisce e cattura
+								valore, lavorando su quattro principali aree di business: i
+								clienti, l'offerta, le infrastrutture e la solidit&agrave
+								finanziaria.<br> La parte centrale del Business Model
+								Canvas identifica il valore offerto al cliente (Value
+								Proposition) e rappresenta alcuni degli aspetti di maggior
+								importanza per il business model, come i clienti target
+								(Customer Segment), i flussi di ricavi che derivano dal valore
+								offerto ai clienti (Revenue Streams) e gli elementi che
+								determinano la struttura dei costi (Cost Structure).<br> Il
+								valore raggiunge il cliente attraverso i canali (Channels), e la
+								comunicazione valore/cliente &egrave rappresentata dalle
+								relazioni stabilite con ciascun segmento della clientela
+								(Customer Relationships). Il valore viene generato da risorse
+								(Key Resources) e attivit&agrave chiave (Key Activities) e da
+								partnership chiave nel caso di ousourcing o risorse acquisitie
+								all'esterno (Key Partners)
 							</div>
 							<div class="span4">
 								<div>
 									<img alt="" src="img/content/Business-model_02.png">
 								</div>
 							</div>
+						</div>
 					</div>
-				</div>
-				<div class="hero-unit" id="hearoUnitFooter">
-					<div id="" class="row">
+					<div class="hero-unit" id="hearoUnitFooter">
+						<div id="" class="row">
 							<div id="blueCanvas" class="span8">
 								HWT &egrave una start-up fondata nel 2013 da un team di giovani
 								legati dal- la convinzione che la vera sfida per le imprese
@@ -637,15 +658,16 @@
 								rappresentazione grafica, che consi- deriamo il modo pi&ugrave
 								semplice e creativo per fissare concetti o rap- presentare
 								problemi e idee; per questo utilizziamo strumenti derivati dal
-								pensiero visuale, tra i quali il Business Model Canvas, ideato da
-								Alexander Oserwalder e diffuso attraverso il libro di cui egli
-								stesso &egrave autore "Business Model Generation"
+								pensiero visuale, tra i quali il Business Model Canvas, ideato
+								da Alexander Oserwalder e diffuso attraverso il libro di cui
+								egli stesso &egrave autore "Business Model Generation"
 							</div>
 							<div id="greenCanvas" class="span4">
 								<b> Via F. D. Guerrazzi n&deg 1/N<br> 50132 - Firenze<br>
 									tel. +39 055 3987682<br> info@hwtconsulting.i<br>
 								</b>
 							</div>
+						</div>
 					</div>
 				</div>
 			</div>

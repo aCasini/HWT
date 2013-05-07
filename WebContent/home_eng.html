@@ -1,584 +1,679 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/pagesStyle.css" />
-	<link rel="stylesheet" type="text/css" href="css/contentImg.css" />
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-	<!-- JQuery -->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <![if !IE]>
-	   <script src="js/menu.js"></script>
-	<![endif]>
-	<![if IE]>
-	   <script type="text/javascript">
-	   if (navigator.appName == 'Microsoft Internet Explorer'){
-			var el = document.createElement('script');
-			el.async = false;
-			el.src = "js/menuIE.js";
-			el.type = 'text/javascript';
-			
-			(document.getElementsByTagName('HEAD')[0]||document.body).appendChild(el);
-		}
-	   </script>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/pagesStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/contentImg.css" />
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap-responsive.min.css" />
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<![if !IE]>
+<script src="js/menu.js"></script>
+<![endif]>
+<![if IE]>
+<script type="text/javascript">
+	if (navigator.appName == 'Microsoft Internet Explorer') {
+		var el = document.createElement('script');
+		el.async = false;
+		el.src = "js/menuIE.js";
+		el.type = 'text/javascript';
+
+		(document.getElementsByTagName('HEAD')[0] || document.body)
+				.appendChild(el);
+	}
+</script>
 <!-- 	   <script src="js/menuIE.js"></script> -->
-	<![endif]>
+<![endif]>
+
+<script type="text/javascript">
+	var isOnTop = false;
+	$(document).ready(function() {
+		//Caricamento del munu circolare
+		$('ul').circleMenu({
+			item_diameter : 150,
+			circle_radius : 280,
+			'transition_function' : 'linear',
+			direction : 'full'
+		});
+
+		$(window).scroll(function() {
+			if (!isOnTop)
+				$("#goTop").css('visibility', 'visible');
+			else
+				$("#goTop").css('visibility', 'hidden');
+		});
+	});
+
+	$(window).load(
+			function() {
+				//Setting z-index Balloons
+				$("#centerId").css('z-index', '1');
+
+				//Controllo se il browser è safari
+				if (navigator.userAgent.match(/AppleWebKit/)
+						&& !navigator.userAgent.match(/Chrome/)) {
+					$(".centerItem").css('margin-top', '34%');
+					$(".itemCircle").css('margin-top', '36%');
+					$(".itemCircle").css('margin-left', '44%');
+				}
+
+				if (navigator.userAgent.match(/AppleWebKit/)
+						&& navigator.userAgent.match(/Chrome/)) {
+					// 				$(".itemCircle").css('img05', 'auto');
+					// 				$(".itemCircle").css('img05', '100%');
+				}
+			});
+
+	//Funzione di over sui Balloons
+	//MAPPING
+	$(function() {
+		$('a#icon05').hover(function() {
+			$("#balloon05").css('z-index', '2');
+			$('div#pop-up05').show();
+		}, function() {
+			$('div#pop-up05').hide();
+		});
+	});
+	//GAMING
+	$(function() {
+		$('a#icon04').hover(function() {
+			$("#balloon04").css('z-index', '2');
+			$('div#pop-up04').show();
+		}, function() {
+			$('div#pop-up04').hide();
+		});
+	});
+	//STRATEGIA
+	$(function() {
+		$('a#icon02').hover(function() {
+			$("#balloon02").css('z-index', '2');
+			$('div#pop-up02').show();
+		}, function() {
+			$('div#pop-up02').hide();
+		});
+	});
+	//USER EXPERIENCE
+	$(function() {
+		$('a#icon03').hover(function() {
+			$("#balloon03").css('z-index', '2');
+			$('div#pop-up03').show();
+		}, function() {
+			$('div#pop-up03').hide();
+		});
+	});
+	//CONTATTI
+	$(function() {
+		$('a#icon07').hover(function() {
+			$("#balloon07").css('z-index', '2');
+			$('div#pop-up07').show();
+		}, function() {
+			$('div#pop-up07').hide();
+		});
+	});
+	//CONOSCENZA
+	$(function() {
+		$('a#icon08').hover(function() {
+			$("#balloon08").css('z-index', '2');
+			$('div#pop-up08').show();
+		}, function() {
+			$('div#pop-up08').hide();
+		});
+	});
+	//START-UP
+	$(function() {
+		$('a#icon01').hover(function() {
+			$("#balloon01").css('z-index', '2');
+			$('div#pop-up01').show();
+		}, function() {
+			$('div#pop-up01').hide();
+		});
+	});
+	//BUSINESS-MODEL
+	$(function() {
+		$('a#icon06').hover(function() {
+			$("#balloon06").css('z-index', '2');
+			$('div#pop-up06').show();
+		}, function() {
+			$('div#pop-up06').hide();
+		});
+	});
+</script>
+<script type="text/javascript">
+	function openMenu() {
+		$('ul').circleMenu('open');
+	}
+
+	function scrolling05() {
+		$('html, body').animate({
+			scrollTop : $('#heroMapping').offset().top 
+		}, 1500);
+		isOnTop = false;
+	}
+
+	function scrolling04() {
+		$('html, body').animate({
+			scrollTop : $('#hearoUnitGame').offset().top
+		}, 1500);
+		isOnTop = false;
+	}
+
+	function scrolling02() {
+		$('html, body').animate({
+			scrollTop : $('#heroStrategia').offset().top 
+		}, 1500);
+		isOnTop = false;
+	}
+
+	function scrolling03() {
+		$('html, body').animate({
+			scrollTop : $('#heroUnitUX').offset().top
+		}, 1500);
+		isOnTop = false;
+	}
 	
-	<script type="text/javascript">
-		var isOnTop = false;
-		$(document).ready(function() {
-			//Caricamento del munu circolare
-			$('ul').circleMenu({
-				item_diameter : 150,
-				circle_radius : 280,
-				'transition_function' : 'linear',
-				direction : 'full'
-			});
-			
-			$(window).scroll(function () {
-				if(!isOnTop)
-					$("#goTop").css('visibility', 'visible');
-				else
-					$("#goTop").css('visibility', 'hidden');
-			});
-		});
+	function scrolling08() {
+		$('html, body').animate({
+			scrollTop : $('#hearoUnitKS').offset().top
+		}, 1500);
+		isOnTop = false;
+	}
+
+	function scrolling01() {
+		$('html, body').animate({
+			scrollTop : $('#hearoUnitKS').offset().top
+		}, 1500);
+		isOnTop = false;
+	}
 	
-		$(window).load(function() {
-			//Setting z-index Balloons
-			$("#centerId").css('z-index', '1');
-			
-			//Controllo se il browser è safari
-			if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
-			   $(".centerItem").css('margin-top', '34%');
-			   $(".itemCircle").css('margin-top', '36%');
-			   $(".itemCircle").css('margin-left', '44%');
-			}
-			
-			if (navigator.userAgent.match(/AppleWebKit/) && navigator.userAgent.match(/Chrome/)) {
-// 				$(".itemCircle").css('img05', 'auto');
-// 				$(".itemCircle").css('img05', '100%');
-			}
-		});
-		
-		//Funzione di over sui Balloons
-		//MAPPING
-		$(function() {
-			$('a#icon05').hover(function() {
-				$("#balloon05").css('z-index', '2');
-				$('div#pop-up05').show();
-			}, function() {
-				$('div#pop-up05').hide();
-			});
-		});
-		//GAMING
-		$(function() {
-			$('a#icon04').hover(function() {
-				$("#balloon04").css('z-index', '2');
-				$('div#pop-up04').show();
-			}, function() {
-				$('div#pop-up04').hide();
-			});
-		});
-		//STRATEGIA
-		$(function() {
-			$('a#icon02').hover(function() {
-				$("#balloon02").css('z-index', '2');
-				$('div#pop-up02').show();
-			}, function() {
-				$('div#pop-up02').hide();
-			});
-		});
-		//USER EXPERIENCE
-		$(function() {
-			$('a#icon03').hover(function() {
-				$("#balloon03").css('z-index', '2');
-				$('div#pop-up03').show();
-			}, function() {
-				$('div#pop-up03').hide();
-			});
-		});
-		//CONTATTI
-		$(function() {
-			$('a#icon07').hover(function() {
-				$("#balloon07").css('z-index', '2');
-				$('div#pop-up07').show();
-			}, function() {
-				$('div#pop-up07').hide();
-			});
-		});
-		//CONOSCENZA
-		$(function() {
-			$('a#icon08').hover(function() {
-				$("#balloon08").css('z-index', '2');
-				$('div#pop-up08').show();
-			}, function() {
-				$('div#pop-up08').hide();
-			});
-		});
-		//START-UP
-		$(function() {
-			$('a#icon01').hover(function() {
-				$("#balloon01").css('z-index', '2');
-				$('div#pop-up01').show();
-			}, function() {
-				$('div#pop-up01').hide();
-			});
-		});
-		//BUSINESS-MODEL
-		$(function() {
-			$('a#icon06').hover(function() {
-				$("#balloon06").css('z-index', '2');
-				$('div#pop-up06').show();
-			}, function() {
-				$('div#pop-up06').hide();
-			});
-		});
- 	</script> 
-	<script type="text/javascript">
-		function openMenu() {
-			$('ul').circleMenu('open');
+	function scrolling06() {
+		$('html, body').animate({
+			scrollTop : $('#hearoUnitBM').offset().top
+		}, 1500);
+		isOnTop = false;
+	}
+
+	function scrolling07() {
+		$('html, body').animate({
+			scrollTop : $('#hearoUnitFooter').offset().top
+		}, 1500);
+		isOnTop = false;
+	}
+
+	function goOnTop() {
+		if (navigator.userAgent.match(/AppleWebKit/)
+				&& !navigator.userAgent.match(/Chrome/)) {
+			$(".centerItem").css('margin-top', '34%');
+			$(".itemCircle").css('margin-top', '36%');
+			$(".itemCircle").css('margin-left', '44%');
 		}
-		
-		function scrolling05(){
-            $('html, body').animate({
-                scrollTop: 800
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling04(){
-            $('html, body').animate({
-                scrollTop: 1200
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling02(){
-            $('html, body').animate({
-                scrollTop: 1500
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling03(){
-            $('html, body').animate({
-                scrollTop: 2500
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling08(){
-            $('html, body').animate({
-                scrollTop: 3000
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling01(){
-            $('html, body').animate({
-                scrollTop: 3000
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling06(){
-            $('html, body').animate({
-                scrollTop: 3600
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function scrolling07(){
-            $('html, body').animate({
-                scrollTop: 4200
-            }, 1500);
-            isOnTop=false;
-		}
-		
-		function goOnTop(){
-			if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
-			   $(".centerItem").css('margin-top', '34%');
-			   $(".itemCircle").css('margin-top', '36%');
-			   $(".itemCircle").css('margin-left', '44%');
-			}
-			$('html, body').animate({
-                scrollTop: -3500
-            }, 1500);
-			isOnTop = true;
-			openMenu();
-		}
-	</script>
-	<title>HWT</title>
-	<link href="/img/Icone/favicon.png" type="image/png" />
+		$('html, body').animate({
+			scrollTop : -3500
+		}, 1500);
+		isOnTop = true;
+		openMenu();
+	}
+</script>
+<title>HWT</title>
+<link href="/img/Icone/favicon.png" type="image/png" />
 </head>
 <body onload="openMenu();" style="overflow: scroll;">
-	<div id="allContent" style="display: block;">
-		<div id="containerHeader" class="row-fluid">
-		<div class="span12" style="padding: 2px;">
-				<table style="float: right;"> 
-					<tr>
-						<td>
-							<a href="home.html" id="ita">
-								 <img title="Italiano" alt="Italiano" src="img/ita.png" id="imgIta">
-							</a>	
-						</td>
-						<td>
-							<a href="home_eng.html" id="eng">
-								 <img title="English" alt="English" src="img/eng.png" id="imgEng">
-							</a>	
-						</td>
-					<tr> 
-				</table>
+	<div>
+		<!--  id="allContent" style="display: block;"> -->
+		<div id="containerHeader">
+			<div class="row">
+				<div class="span1 offset11" style="padding: 2px;">
+					<table>
+						<tr>
+							<td><a href="home.html" id="ita"> <img title="Italiano"
+									alt="Italiano" src="img/ita.png" id="imgIta">
+							</a></td>
+							<td><a href="home_eng.html" id="eng"> <img
+									title="English" alt="English" src="img/eng.png" id="imgEng">
+							</a></td>
+						<tr>
+					</table>
+				</div>
 			</div>
-			<div align="center" id="ex-timing" class="span12">
-				<ul>
-					<li class="centerItem" id="centerId"><a href="#"><img
-							alt="Logo HWT" src="img/Logo.png"></a></li>
-					<li class="itemCircle" id="balloon05">
-						<div id="pop-up05">
-							<div id="mapping">
-								<b>Communicates through images</b>
-								<div id="mContent">
+			<div class="row" style="position: fixed;">
+				<div class="span1 offset12" style="padding: 2px;">
+					<a href="#" onclick="goOnTop();" style="visibility: hidden;" id="goTop">
+						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div align="center" id="ex-timing" class="span12">
+					<ul>
+						<li class="centerItem" id="centerId">
+							<a href="#">
+<!-- 								<div class="row"> -->
+<!-- 									<div class="span2"> -->
+									<img alt="Logo HWT" src="img/Logo.png">
+<!-- 									</div> -->
+<!-- 								</div> -->
+							</a>
+						</li>
+						<li class="itemCircle" id="balloon05">
+							<div id="pop-up05">
+								<div id="mapping">
+									<b>Communicates through images</b>
+<!-- 									<div id="mContent"> -->
+										<!-- 									Mappa, Template Visuali, Visual thinking, Disegno, Canvas, Chiaro,<br>  -->
+										<!-- 									Intuitivo, Back Napkin, Grafica, Infografica, Il potere delle immagini -->
+<!-- 									</div> -->
 								</div>
-							</div>
-						</div>
-						<a href="#" id="icon05" onclick="scrolling05();">
-							 <img alt="Mapping" src="img/bIcon/bIcon05.png" id="img05"
-								onmouseover="this.src='img/Icone/Big/Icon05b.png'"
-								onmouseout="this.src='img/bIcon/bIcon05.png'">
-						</a> <!-- HIDDEN / POP-UP DIV -->
-					</li>
-					<li class="itemCircle" id="balloon04">
-						<div id="pop-up04">
-							<div id="gaming">
-								<b>Have fun with your business</b>
-								<div id="gContent">
+							</div> 
+<!-- 							<div class="row"> -->
+<!-- 								<div class="span2"> -->
+								<a href="#" id="icon05" onclick="scrolling05();"> 
+									<img
+									alt="Mapping" src="img/bIcon/bIcon05.png" id="img05"
+									title="Comunica attraverso le immagini"
+									onmouseover="this.src='img/Icone/Big/Icon05b.png'"
+									onmouseout="this.src='img/bIcon/bIcon05.png'">
+								</a> <!-- HIDDEN / POP-UP DIV -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+						</li>
+						<li class="itemCircle" id="balloon04">
+							<div id="pop-up04">
+								<div id="gaming">
+									<b>Have fun with your business</b>
+									<div id="gContent"></div>
 								</div>
-							</div>
-						</div>
-						<a href="#" id="icon04" onclick="scrolling04();"> <img alt="Gaming"
-								src="img/bIcon/bIcon04.png"
+							</div> <a href="#" id="icon04" onclick="scrolling04();"> <img
+								alt="Gaming" src="img/bIcon/bIcon04.png"
 								onmouseover="this.src='img/Icone/Big/Icon04b.png'"
 								onmouseout="this.src='img/bIcon/bIcon04.png'">
-						</a></li>	
-					<li class="itemCircle" id="balloon02">
-						<div id="pop-up02" >
-							<div id="strategia">
-								<b>Explore your strategy</b>
-								<div id="sContent">
-								</div>
-							</div>
-						</div>
-						<a href="#" id="icon02" onclick="scrolling02();"> <img alt="Strategia"
-							src="img/bIcon/bIcon02.png"
-							onmouseover="this.src='img/Icone/Big/Icon02b.png'"
-							onmouseout="this.src='img/bIcon/bIcon02.png'">
-						</a></li>
-					<li class="itemCircle" id="balloon03">
-						<div id="pop-up03" >
-							<div id="user">
-								<b>Tell us who you are</b>
-								<div id="uContent">
-								</div>
-							</div>
-						</div>
-						<a href="#" id="icon03" onclick="scrolling03();"> <img alt="User Experience"
-							src="img/bIcon/bIcon03.png"
-							onmouseover="this.src='img/Icone/Big/Icon03b.png'"
-							onmouseout="this.src='img/bIcon/bIcon03.png'">
-						</a></li>
-					<li class="itemCircle" id="balloon07">
-						<div id="pop-up07">
-							<div id="contatti">
-								<b>Contacts, who we are, where we are</b>
-								<div id="cContent">
-								</div>
-							</div>
-						</div>
-						<a href="#" id="icon07" onclick="scrolling07();"> <img alt="Contatti"
-							src="img/bIcon/bIcon07.png"
-							onmouseover="this.src='img/Icone/Big/Icon07b.png'"
-							onmouseout="this.src='img/bIcon/bIcon07.png'">
-						</a></li>
-					<li class="itemCircle" id="balloon08">
-						<a href="#" id="icon08" onclick="scrolling08();"> <img alt="Conoscenza"
-							src="img/bIcon/bIcon08.png"
-							onmouseover="this.src='img/Icone/Big/Icon08b.png'"
-							onmouseout="this.src='img/bIcon/bIcon08.png'">
 						</a>
-						<div id="pop-up08">
-							<div id="konoscenza">
-								<b>Highlights your knowledge</b>
-								<div id="kContent">
+						</li>
+						<li class="itemCircle" id="balloon02">
+							<div id="pop-up02">
+								<div id="strategia">
+									<b>Explore your strategy</b>
+									<!-- 								<div id="sContent"> -->
+									<!-- 									Bussola, Esplorazione, Business Strategy, Hike,<br> -->
+									<!-- 									Hike Mapping (Livello strategico),strumenti,<br> -->
+									<!-- 									Toolkit, direzione, posizionamento strategico,<br> -->
+									<!-- 									marketing strategico -->
+									<!-- 								</div> -->
+<!-- 									<div id="sContent"></div> -->
+
 								</div>
-							</div>
-						</div>
-					</li>
-					<li class="itemCircle" id="balloon01">
-						<a href="#" id="icon01" onclick="scrolling01();"> <img alt="Start-Up"
-							src="img/bIcon/bIcon01.png"
-							onmouseover="this.src='img/Icone/Big/Icon01b.png'"
-							onmouseout="this.src='img/bIcon/bIcon01.png'">
+							</div> <a href="#" id="icon02" onclick="scrolling02();"> <img
+								alt="Strategia" src="img/bIcon/bIcon02.png"
+								onmouseover="this.src='img/Icone/Big/Icon02b.png'"
+								onmouseout="this.src='img/bIcon/bIcon02.png'">
 						</a>
-						<div id="pop-up01" >
-							<div id="startup">
-								<b>Give life to your idea</b>
-								<div id="startContent">
+						</li>
+						<li class="itemCircle" id="balloon03">
+							<div id="pop-up03">
+								<div id="user">
+									<b>Tell us who you are</b>
+									<div id="uContent"></div>
 								</div>
-							</div>
-						</div>
-					</li>
-					<li class="itemCircle" id="balloon06">
-						<a href="#" id="icon06" onclick="scrolling06();"> <img alt="Business Model"
-							src="img/bIcon/bIcon06.png"
-							onmouseover="this.src='img/Icone/Big/Icon06b.png'"
-							onmouseout="this.src='img/bIcon/bIcon06.png'">
+							</div> <a href="#" id="icon03" onclick="scrolling03();"> <img
+								alt="User Experience" src="img/bIcon/bIcon03.png"
+								onmouseover="this.src='img/Icone/Big/Icon03b.png'"
+								onmouseout="this.src='img/bIcon/bIcon03.png'">
 						</a>
-						<div id="pop-up06">
-							<div id="business">
-								<b>Discover your value</b>
-								<div id="bContent">
+						</li>
+						<li class="itemCircle" id="balloon07">
+							<div id="pop-up07">
+								<div id="contatti">
+									<b>Contacts, About Us, Where we are</b>
+									<div id="cContent"></div>
+								</div>
+							</div> <a href="#" id="icon07" onclick="scrolling07();"> <img
+								alt="Contatti" src="img/bIcon/bIcon07.png"
+								onmouseover="this.src='img/Icone/Big/Icon07b.png'"
+								onmouseout="this.src='img/bIcon/bIcon07.png'">
+						</a>
+						</li>
+						<li class="itemCircle" id="balloon08"><a href="#" id="icon08"
+							onclick="scrolling08();"> <img alt="Conoscenza"
+								src="img/bIcon/bIcon08.png"
+								onmouseover="this.src='img/Icone/Big/Icon08b.png'"
+								onmouseout="this.src='img/bIcon/bIcon08.png'">
+						</a>
+							<div id="pop-up08">
+								<div id="konoscenza">
+									<b>Highlights your knowledge</b>
+<!-- 									<div id="kContent"></div> -->
+								</div>
+							</div></li>
+						<li class="itemCircle" id="balloon01"><a href="#" id="icon01"
+							onclick="scrolling01();"> <img alt="Start-Up"
+								src="img/bIcon/bIcon01.png"
+								onmouseover="this.src='img/Icone/Big/Icon01b.png'"
+								onmouseout="this.src='img/bIcon/bIcon01.png'">
+						</a>
+							<div id="pop-up01">
+								<div id="startup">
+									<b>Give life to your idea</b>
+<!-- 									<div id="startContent"></div> -->
+								</div>
+							</div></li>
+						<li class="itemCircle" id="balloon06"><a href="#" id="icon06"
+							onclick="scrolling06();"> <img alt="Business Model"
+								src="img/bIcon/bIcon06.png"
+								onmouseover="this.src='img/Icone/Big/Icon06b.png'"
+								onmouseout="this.src='img/bIcon/bIcon06.png'">
+						</a>
+							<div id="pop-up06">
+								<div id="business">
+									<b>Discover your valore</b>
+									<div id="bContent"></div>
+								</div>
+							</div></li>
+					</ul>
+				</div>
+			</div>
+<!-- 			<div class="row" style="position: fixed;"> -->
+<!-- 				<div class="span1 offset12" style="padding: 2px;"> -->
+<!-- 					<a href="#" onclick="goOnTop();" style="visibility: hidden;" id="goTop"> -->
+<!-- 						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png"> -->
+<!-- 					</a> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+			<div class="row">
+				<div id="infoDitta" class="span8 offset4">
+					<div class="spa">HWT s.r.l. - Via Francesco Domenico
+						Guerrazzi 1/n - 50132 Florence - CF e P.IVA 06281750486</div>
+				</div>
+			</div>
+		</div>
+		<div id='main' role='main'>
+			<div class='container' id="containerBootstrap">
+				<div class='content'>
+					<div class="hero-unit" id="heroMapping">
+						<div id="pagMapping" class="row">
+							<div class="span4">
+								<img id="imgMapping" alt="Mapping" src="img/titles/Mapping.png">
+								<div>
+									<img alt="" src="img/content/Mapping.png">
+								</div>
+							</div>
+							<div class="span8" id="contentPagMapping">Il Visual
+								Thinking rappresenta la pratica di usare le immagini per
+								comunicare in maniera chiara e intuitiva. Schizzi, disegni o
+								note su post-it, per esempio, possono essere utilizzati per
+								costruire e discutere un'idea o per risolvere problemi. Le
+								tecniche visuali permettono di "dare vita" alle questioni legate
+								al business, passando dall'astratto al concreto. Credendo
+								fortemente nel potere delle immagini, il Team di HWT ha
+								sviluppato un toolkit di strumenti visuali che si vano ad
+								aggiungere a quelli gi&agrave consolidati e presenti nello
+								scenario attuale, come il Business Mode Canvas, una mappa
+								concettuale (una sorta di "tela" da cui deriva il nome Canvas)
+								suddivisa in nove elementi base, che funziona attraverso dei
+								post-it, che diventano contenitori di idee e rappresentano un
+								mezzo per le discussioni di tipo strategico. Lo "schizzo"
+								&egrave il modo con cui visualizzare le idee, come suggerisce
+								Dam Roam nel libro "The Back of the Napking (2008).</div>
+						</div>
+					</div>
+					<div class="hero-unit" id="hearoUnitGame">
+						<div class="row" style="text-align: center;">
+							<div class="span12">
+								<img alt="Gaming" src="img/titles/Gaminfication.png"
+									style="padding-bottom: 15px;">
+							</div>
+						</div>
+						<div id="pagGaming" class="row">
+							<div class="span4">
+								<div>
+									<img alt="" src="img/content/Gamification_03.png">
+								</div>
+							</div>
+							<div id="contentPagGaming" class="span6">
+								<div style="text-align: right;">
+									<img alt="Gaming" src="img/content/Gamification_02.png">
+								</div>
+								<div>Il nostro metodo di lavoro si sviluppa sulla
+									convizione che quando le persone vengono coinvolte "giocando"
+									diventa pi&ugrave facile per loro analizzare situazioni o
+									individuare soluzioni. Per questo i nostri strumenti richiamano
+									il gioco e il divertimento, e si basano su un approccio
+									collaborativo e dinamico. Il gioco infatti permette di
+									sviluppare il potenziale delle persone, favorendo la libera
+									espressione personale e favorendo il contributo di tutti alle
+									discussioni e alle decisioni.</div>
+							</div>
+							<div class="span2">
+								<img alt="" src="img/content/Gamification_01.png"
+									style="padding: 5%; margin-top: 30%">
+							</div>
+						</div>
+					</div>
+					<div class="hero-unit" id="heroStrategia">
+						<div class="row">
+							<div class="span12" style="text-align: center;">
+								<img alt="Strategia" src="img/titles/Strategia.png"
+									id="rosImgStra">
+							</div>
+						</div>
+						<div id="pagStrategia" class="row">
+							<div class="span3">
+								<div>
+									<img alt="" src="img/content/Strategia_01.png">
+								</div>
+							</div>
+							<div id="contentPagStrategia" class="span6">
+								Sia che un'organizzazione voglia esplorare un nuovo business,
+								sia che voglia far crescerne uno gi&agrave esistente, la
+								rappresentazione completa della strategia di business &egrave
+								fondamentale. Tenuto conto di questo obiettivo, il punto di
+								partenza &egrave per noi l'esplorazione del modello
+								organizzativo attuale, ed in particolare l'analisi
+								dell'identit&agrave delll'organizzazione, in termini di cultura
+								organizzativa, risorse o capabilities disponibili,
+								posizionamento rispetto ai competitors.<br> Il toolkit di
+								strumenti visuali che andiamo ad utilizzare si compone innanzi
+								tutto del Business Model Canvas, che rappresentando il modello
+								di business attuale, diventa la lente per la reinterpretazione
+								della strategia. Seguir&agrave l'esame strategico dell'ambiente
+								in cui opera il modello di business. Queste sono le fasi del
+								nostro lavoro a livello strategico:<br> <br> A - Hike
+								Mapping<br> Modello di Business<br> <br> B -
+								Business Compass<br> Cultura organizzativa (i valori
+								fondamentalu in cui crede l'organizzazione, i sogni e le
+								ambizioni)<br> <br> C - Business Engine<br>
+								Capabilities/Resources Assessment<br> <br> D - Market<br>
+								Analisi dell'ambiente<br> Analisi del mercato<br>
+								Analisi dei concorrenti<br> Posizionamento strategico<br>
+								<br> E - Finance<br> Analisi economico-finanziaria<br>
+								<br> F - Business Pattern<br> Business Strategy<br>
+								Marketing Strategico<br>
+							</div>
+							<div class="span3">
+								<img alt="" src="img/content/Strategia_02.png">
+							</div>
+						</div>
+					</div>
+					<div class="hero-unit" id="heroUnitUX">
+						<div class="row">
+							<div class="span6 offset2">
+								<img alt="User-Experience" src="img/titles/UX.png" id="rowImgUX">
+							</div>
+						</div>
+						<div id="pagUserExperience" class="row">
+							<div class="span2">
+								<img alt="" src="img/content/Ux_01.png">
+							</div>
+							<div id="contentPagUserExperience" class="span6">
+								L'UX &egrave per noi un driver di valore e pertanto ha un ruolo
+								centrale in tutte le fasi di contatto con il cliente.
+								Utilizziamo template visuali, i"Personas", per descrivere i
+								nostri clienti, cercando di coglierne a fondo le proccupazioni,
+								le ambizioni, i comportamenti e la loro esperienza (CX= Customer
+								Experience).<br> I"Personas" sono quindi il nostro
+								framework di riferimento per esplorare il valore del cliente.<br>
+								Gli scenari che mostrano l'interazione tra i clienti e i servizi
+								&egrave guidata step by step dalla Customer Journey Map, che
+								fornisce un supporto visuale che facilita la comprensione e la
+								sequenza delle attivit&agrave e delle vulnerabilit&agrave che
+								caratterizza la service experience. Le decisioni sono guidate
+								dai feedback progressivi forniti direttamente dai clienti. La
+								combinazione di User Experience &egrave Strategia &egrave la
+								chiave per la scoperta del valore dei nostro clienti.
+							</div>
+							<div class="span4">
+								<img alt="" src="img/content/Ux_02.png">
+							</div>
+						</div>
+					</div>
+					<div class="hero-unit" id="hearoUnitKS">
+						<div id="pagKnowStart" class="row">
+							<div id="pagKnowHow" class="span6">
+								<div class="row">
+									<div class="span6 offset2">
+										<img alt="Know-How" src="img/titles/Knowhow.png" id="rowImgK">
+									</div>
+								</div>
+								<div class="row">
+									<div class="span2">
+										<img alt="" src="img/content/Know-how_01.png">
+									</div>
+									<div id="contentPagKnowHow" class="span4">
+										<div>
+											Il valore di un'organizzazione non si misura esclusivamente
+											dalle risorse tangibili, ma risiede soprattutto nella
+											conoscenza, intesa come valorizzazione del capitale
+											inellettuale, delle competenze e in generale di tutte le
+											risorse "intangible".<br> Il nostro lavoro mette sempre
+											al centro le persone, i loro bisogni e le loro aspettative;
+											&egrave su di esse che dobbiamo scommettere.<br>
+											L'esplorazione del valore prevede quindi anche un percorso di
+											condivisione, codifica, trasferimento di conoscenza, e per
+											questo sviluppiamo strumenti di knowledge management secondo
+											approcci divesi e specifici per ciascuna organizzazione.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="pagStartUp" class="span7">
+								<div class="row">
+									<div class="span6 offset1">
+										<img alt="Start-Up" src="img/titles/Startup.png" id="rowImgSU">
+									</div>
+								</div>
+								<div class="row">
+									<div id="contentPagStartUp" class="span4 offset1">
+										<div>
+											La Start-up nasce da un'idea, ma affinch&egrave un'idea possa
+											essere trasformata in business ogni suo elemento deve essere
+											descritto e analizzato in chiave strategica. HWT &egrave una
+											start-up, e come tale conosce le condizioni di estrema
+											incertezza e di vulnerabilit&agrave in cui si muovono questo
+											tipo di organizzazioni.<br> Abbiamo potuto testare su
+											noi stessi i benefici dell'utilizzo del Business Model
+											Canvas, per l'esplorazione e la descrizione del nostro
+											modello di business. Crediamo nell'approccio Lean Start-up,
+											ovvero nel rilascio di modelli di business prototipali, che
+											possano evolvere grazie a continui feedback da parte dei
+											clienti.
+											<div>
+												<img alt="" src="img/content/Start-up_02.png">
+											</div>
+										</div>
+									</div>
+									<div class="span2">
+										<img alt="" src="img/content/Start-up_01.png">
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="hero-unit" id="hearoUnitBM">
+						<div class="row">
+							<div class="span12" id="rowImgBM">
+								<img alt="Business-Model" src="img/titles/Business-model.png">
+							</div>
+						</div>
+						<div id="pagBusinessModel" class="row">
+							<div id="contentPagBusinessModel" class="span8">
+								Il Business Model racconta il funzionamento di
+								un'organizzazione. Convinti che ogni persona possa apportare
+								valore all'organizzazione secondo un approccio Kaizen, che
+								incoraggia un percorso di miglioramento continuo basato sul
+								rinnovamento a piccoli passi giorno per giorno, crediamo che la
+								descrizione di un modello di business debba essere condotta
+								attraverso il supporto di tutti, ed &egrave pertanto necessario
+								che ci sia una comprensione condivisa di ci&ograve che &egrave
+								realmente un modello di business.<br> Il Business Model
+								Canvas risponde a queste necessit&agrave, essendo un template
+								visuale che favorisce la comprensione del modello di business,
+								rendendolo un concetto facilmente accessibile a tutti e
+								facilitando cos&igrave la discussione.<br> Attraverso
+								questo strumento &egrave possibile descrivere la logica in base
+								alla quale un'organizzazione crea, distribuisce e cattura
+								valore, lavorando su quattro principali aree di business: i
+								clienti, l'offerta, le infrastrutture e la solidit&agrave
+								finanziaria.<br> La parte centrale del Business Model
+								Canvas identifica il valore offerto al cliente (Value
+								Proposition) e rappresenta alcuni degli aspetti di maggior
+								importanza per il business model, come i clienti target
+								(Customer Segment), i flussi di ricavi che derivano dal valore
+								offerto ai clienti (Revenue Streams) e gli elementi che
+								determinano la struttura dei costi (Cost Structure).<br> Il
+								valore raggiunge il cliente attraverso i canali (Channels), e la
+								comunicazione valore/cliente &egrave rappresentata dalle
+								relazioni stabilite con ciascun segmento della clientela
+								(Customer Relationships). Il valore viene generato da risorse
+								(Key Resources) e attivit&agrave chiave (Key Activities) e da
+								partnership chiave nel caso di ousourcing o risorse acquisitie
+								all'esterno (Key Partners)
+							</div>
+							<div class="span4">
+								<div>
+									<img alt="" src="img/content/Business-model_02.png">
 								</div>
 							</div>
 						</div>
-					</li>
-				</ul>
-			</div>
-			<div id="infoDitta" class="row-fluid">
-				HWT s.r.l. - Via Francesco Domenico Guerrazzi 1/n - 50132 Florence - CF e P.IVA 06281750486
-			</div>
-		</div>
-		<div id="pagMapping" class="row-fluid">
-			<div class="generalContents" style="float: left;">
-				<div class="span4" style="float: left;">
-					<img alt="Mapping" src="img/titles/Mapping.png" style="padding: 5%; float: right;">
-					<div>
-						<img alt="" src="img/content/Mapping.png" style="padding: 5%">
 					</div>
-				</div>
-				<div class="span8" id="contentPagMapping">
-					Il Visual Thinking rappresenta la pratica di usare le immagini per comunicare in maniera chiara e intuitiva.<br>
-					Schizzi, disegni o note su post-it, per esempio, possono essere utilizzati per costruire e discutere un'idea o per risolvere problemi.<br>
-					Le tecniche visuali permettono di "dare vita" alle questioni legate al business, passando dall'astratto al concreto. <br>
-					Credendo fortemente nel potere delle immagini, il Team di HWT ha sviluppato un toolkit di strumenti visuali che si vanno ad aggiungere a quelli gi&agrave consolidati e presenti nello scenario attuale, come il Business Mode Canvas, una mappa concettuale (una sorta di "tela" da cui deriva il nome Canvas) suddivisa in nove elementi base, che funziona attraverso dei post-it, che diventano contenitori di idee e rappresentano un mezzo per le discussioni di tipo strategico.<br> 
-					Lo "schizzo" &egrave il modo con cui visualizzare le idee, come suggerisce Dam Roam nel libro "The Back of the Napking (2008).
-				</div>
-			</div>
-		</div>
-			<div id="goTop" style="margin-top: 700px; position: fixed; visibility: hidden; margin-left: 92%" class="row-fluid">
-				<a href="#" onclick="goOnTop();"><img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png"></a>
-			</div>
-		<div id="pagGaming" class="row-fluid">
-			<div class="generalContents" style="float: left;">
-				<div class="span4" style="float: left;">
-					<div>
-						<img alt="" src="img/content/Gamification_03.png" style="padding: 5%">
-					</div>
-				</div>
-				<div class="span2" style="float: right;">
-					<img alt="" src="img/content/Gamification_01.png" style="padding: 5%; margin-top: 30%">
-				</div>
-				<div id="contentPagGaming" class="span6">
-					<div>
-						<img alt="Gaming" src="img/titles/Gaminfication.png" style="padding: 5%; float: left;">
-						<img alt="Gaming" src="img/content/Gamification_02.png" style="padding: 5%; float: right;">
-					</div>
-					<div style="float: left;">
-						Il nostro metodo di lavoro si sviluppa sulla convizione che quando le persone vengono coinvolte "giocando" diventa pi&ugrave facile per loro analizzare situazioni o individuare soluzioni.
-						Per questo i nostri strumenti  richiamano il gioco e il divertimento, e si basano su un approccio collaborativo e dinamico.
-						Il gioco infatti permette di sviluppare il potenziale delle persone, favorendo la libera espressione personale e favorendo il contributo di tutti alle discussioni e alle decisioni.
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		<div id="pagStrategia" class="row-fluid">
-			<div class="generalContents" style="float: left;">
-				<div class="span4" style="float: left;">
-					<div>
-						<img alt="" src="img/content/Strategia_01.png" style="padding: 5%">
-					</div>
-				</div>
-				<div class="span4" style="float: right;">
-					<img alt="" src="img/content/Strategia_02.png" style="padding: 5%; margin-top: 30%">
-				</div>
-				<div id="contentPagStrategia" class="span4">
-					<div>
-						<img alt="Strategia" src="img/titles/Strategia.png" style="float: left;">
-					</div>
-					<div style="float: left; margin-top: 2%;">
-						Sia che un'organizzazione voglia esplorare un nuovo business, sia che voglia far crescerne uno gi&agrave esistente, la rappresentazione completa della strategia di business &egrave fondamentale.<br>
-						Tenuto conto di questo obiettivo, il punto di partenza &egrave per noi l'esplorazione del modello organizzativo attuale, ed in particolare l'analisi dell'identit&agrave delll'organizzazione,<br>
-						in termini di cultura organizzativa, risorse o capabilities disponibili, posizionamento rispetto ai competitors.<br>
-						Il toolkit di strumenti visuali che andiamo ad utilizzare si compone innanzi tutto del Business Model Canvas, che rappresentando il modello di business attuale, diventa la lente per la reinterpretazione della strategia.<br>
-						Seguir&agrave l'esame strategico dell'ambiente in cui opera il modello di business.<br>
-						Queste sono le fasi del nostro lavoro a livello strategico:<br><br>
-						 
-						A - Hike Mapping<br>
-						Modello di Business<br>
-						<br>
-						B - Business Compass<br>
-						Cultura organizzativa (i valori fondamentalu in cui crede l'organizzazione, i sogni e le ambizioni)<br>
-						<br>
-						C - Business Engine<br>
-						Capabilities/Resources Assessment<br>
-						<br>
-						D - Market<br>
-						Analisi dell'ambiente<br>
-						Analisi del mercato<br>
-						Analisi dei concorrenti<br>
-						Posizionamento strategico<br>
-						<br>
-						E - Finance<br>
-						Analisi economico-finanziaria<br>
-						<br>
-						F - Business Pattern<br>
-						Business Strategy<br>
-						Marketing Strategico<br>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="pagUserExperience" class="row-fluid">
-			<div class="generalContents">
-				<div class="span2" style="float: left;">
-					<div>
-						<img alt="" src="img/content/Ux_01.png" style="padding: 5%">
-					</div>
-				</div>
-				<div class="span6" style="float: right;">
-					<img alt="" src="img/content/Ux_02.png" style="padding: 5%;" >
-				</div>
-				<div id="contentPagUserExperience" class="span4" style="float: right;">
-					<div>
-						<img alt="User-Experience" src="img/titles/UX.png" style="float: left;">
-					</div>
-					<div style="float: right;">
-						L'UX &egrave per noi un driver di valore e pertanto ha un ruolo centrale in tutte le fasi di contatto con il cliente. Utilizziamo template visuali, <br>
-						i"Personas", per descrivere i nostri clienti, cercando di coglierne a fondo le proccupazioni, le ambizioni, i comportamenti e la loro esperienza (CX= Customer Experience).<br>
-						I"Personas" sono quindi il nostro framework di riferimento per esplorare il valore del cliente.<br>
-						 Gli scenari che mostrano l'interazione tra i clienti e i servizi &egrave guidata step by step dalla Customer Journey Map, che fornisce un supporto visuale che facilita la comprensione e la sequenza delle attivit&agrave e delle vulnerabilit&agrave che caratterizza la service experience.<br>
-						 Le decisioni sono guidate dai feedback progressivi forniti direttamente dai clienti.<br>
-						La combinazione di User Experience &egrave Strategia &egrave la chiave per la scoperta del valore dei nostro clienti.
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="pagKnowStart" class="row-fluid">
-			<div class="generalContents" class="row-fluid">
-				<div id="pagKnowHow" style="float: left;" class="span6">
-					<div class="span4" style="float: left; margin-top: 10%;">
-						<div>
-							<img alt="" src="img/content/Know-how_01.png" style="padding: 5%;">
-						</div>
-					</div>
-					<div id="contentPagKnowHow" class="span8">
-						<div>
-						<div>
-							<img alt="Know-How" src="img/titles/Knowhow.png" style="float: left; padding: 5%;">
-						</div>
-						<div style="float: right; margin-right: 2%;">
-							Il valore di un'organizzazione non si misura esclusivamente dalle risorse tangibili, ma risiede soprattutto nella conoscenza,<br>
-							intesa come valorizzazione del capitale inellettuale, delle competenze e in generale di tutte le risorse "intangible".<br>
-							Il nostro lavoro mette sempre al centro le persone, i loro bisogni e le loro aspettative; &egrave su di esse che dobbiamo scommettere.<br> 
-							L'esplorazione del valore prevede quindi anche un percorso di condivisione, codifica, trasferimento di conoscenza,<br>
-							e per questo sviluppiamo strumenti di knowledge management secondo approcci divesi e specifici per ciascuna organizzazione.
-						</div>
-						</div>
-					</div>
-				</div>
-				<div id="pagStartUp" style="float: right;" class="span6">
-					<div id="contentPagStartUp" class="span8" style="float: left;">
-						<div>
-							<div>
-								<img alt="Start-Up" src="img/titles/Startup.png" style="float: left; padding: 5%;">
+					<div class="hero-unit" id="hearoUnitFooter">
+						<div id="" class="row">
+							<div id="blueCanvas" class="span8">
+								HWT &egrave una start-up fondata nel 2013 da un team di giovani
+								legati dal- la convinzione che la vera sfida per le imprese
+								risieda nella ricerca e l'esplorazione del proprio valore.<br>
+								<br> HWT sta per Hike + Worth ovvero "Esplorazione del
+								valore" come strumento per "illuminare" il business e "scalare"
+								il successo.<br> <br> Con strumenti semplici,
+								intuitivi, agili e innovativi aiutiamo le organiz- zazioni che
+								vogliono innovarsi nella comprensione e nello sviluppo del
+								proprio business fornendo un kit di conoscenze strategiche e ma-
+								nageriali con un approccio non convenzionale basato sul visual
+								thin- king, che permette di ottenere benefici tangibili e
+								inaspettati.<br> <br> Il nostro metodo si fonda sulla
+								rappresentazione grafica, che consi- deriamo il modo pi&ugrave
+								semplice e creativo per fissare concetti o rap- presentare
+								problemi e idee; per questo utilizziamo strumenti derivati dal
+								pensiero visuale, tra i quali il Business Model Canvas, ideato
+								da Alexander Oserwalder e diffuso attraverso il libro di cui
+								egli stesso &egrave autore "Business Model Generation"
 							</div>
-							<div style="float: right; margin-left: 4%">
-								La Start-up nasce da un'idea, ma affinch&egrave un'idea possa essere  trasformata in business ogni suo elemento deve essere descritto e analizzato in chiave strategica.<br> 
-								HWT &egrave una start-up, e come tale conosce le condizioni di estrema incertezza e di vulnerabilit&agrave in cui si muovono questo tipo di organizzazioni.<br>
-								Abbiamo potuto testare su noi stessi i benefici dell'utilizzo del Business Model Canvas, per l'esplorazione e la descrizione del nostro modello di business.<br> 
-								Crediamo nell'approccio Lean Start-up, ovvero nel rilascio di modelli di business prototipali, che possano evolvere grazie a continui feedback da parte dei clienti.
-							</div>
-							<div>
-								<img alt="" src="img/content/Start-up_02.png" style="float: left; padding: 5%; margin-left: 15%">
+							<div id="greenCanvas" class="span4">
+								<b> Via F. D. Guerrazzi n&deg 1/N<br> 50132 - Firenze<br>
+									tel. +39 055 3987682<br> info@hwtconsulting.i<br>
+								</b>
 							</div>
 						</div>
 					</div>
-					<div class="span4" style="float: right;">
-						<div>
-							<img alt="" src="img/content/Start-up_01.png" style="padding: 5%">
-						</div>
-					</div>
-					
 				</div>
 			</div>
 		</div>
-		<div id="pagBusinessModel" class="row-fluid">
-			<div class="generalContents">
-				<div id="contentPagBusinessModel" class="span8" style="float: left;">
-					<div>
-						<img alt="Business-Model" src="img/titles/Business-model.png" style="float: left; padding: 5%; margin-left: 10%"">
-					</div>
-					<div style="float: right; margin-left: 15%">
-						Il Business Model racconta il funzionamento di un'organizzazione. Convinti che ogni persona possa apportare valore all'organizzazione secondo un<br>
-						approccio Kaizen, che incoraggia un percorso di miglioramento continuo basato sul rinnovamento a piccoli passi giorno per giorno, crediamo che la<br>
-						descrizione di un modello di business debba essere condotta attraverso il supporto di tutti, ed &egrave pertanto necessario che ci sia una  comprensione<br>
-						condivisa di ci&ograve che &egrave realmente un modello di business.<br>
-						Il Business Model Canvas risponde a queste necessit&agrave, essendo un template  visuale che  favorisce la comprensione del modello di business, rendendolo<br>
-						un concetto facilmente accessibile a tutti e facilitando cos&igrave la discussione.<br>
-						Attraverso questo strumento &egrave possibile descrivere la logica in base alla quale un'organizzazione crea, distribuisce e cattura valore, lavorando su<br>
-						quattro principali aree di business: i clienti, l'offerta, le infrastrutture e la solidit&agrave finanziaria.<br>
-						La parte centrale del Business Model Canvas identifica il valore offerto al cliente (Value Proposition) e rappresenta alcuni degli aspetti di maggior importanza<br>
-						per il business model, come i clienti target (Customer Segment), i flussi di ricavi che derivano dal valore offerto ai clienti (Revenue Streams) e gli elementi<br>
-						che determinano la struttura dei costi (Cost Structure).<br>
-						Il valore raggiunge il cliente attraverso i canali (Channels), e la comunicazione valore/cliente &egrave rappresentata dalle relazioni stabilite con ciascun segmento<br>
-						della clientela (Customer Relationships). Il valore viene generato da risorse (Key Resources) e attivit&agrave chiave (Key Activities) e  da partnership chiave nel caso di ousourcing<br>
-						o risorse acquisitie all'esterno (Key Partners)
-					</div>
-				</div>
-				<div class="span4" style="float: right;">
-					<div>
-						<img alt="" src="img/content/Business-model_02.png" style="padding: 5%; margin-top: 25%">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="pagContatti" class="row-fluid">
-<!-- 				<img alt="Contatti" src="img/footer/Map.jpg"> -->
-				<div id="contentContatti" style="padding: 4%;" class="span12">
-					<div id="blueCanvas" class="span5">
-						HWT &egrave una start-up fondata nel 2013 da un team di giovani legati dal-
-						la convinzione che la vera sfida per le imprese risieda nella ricerca e
-						l'esplorazione del proprio valore.<br><br>
-						
-						HWT sta per Hike + Worth ovvero "Esplorazione del valore" come
-						strumento per "illuminare" il business e "scalare" il successo.<br><br>
-						
-						Con strumenti semplici, intuitivi, agili e innovativi aiutiamo le organiz-
-						zazioni che vogliono innovarsi nella comprensione e nello sviluppo
-						del proprio business fornendo un kit di conoscenze strategiche e ma-
-						nageriali con un approccio non convenzionale basato sul visual thin-
-						king, che permette di ottenere benefici tangibili e inaspettati.<br><br>
-						
-						Il nostro metodo si fonda sulla rappresentazione grafica, che consi-
-						deriamo il modo pi&ugrave semplice e creativo per fissare concetti o rap-
-						presentare problemi e idee; per questo utilizziamo strumenti derivati
-						dal pensiero visuale, tra i quali il Business Model Canvas, ideato da
-						Alexander Oserwalder e diffuso attraverso il libro di cui egli stesso &egrave
-						autore "Business Model Generation"
-					</div>
-					<div id="greenCanvas" class="span3">
-						<b>
-						Via F. D. Guerrazzi n&deg 1/N<br>
-						50132 - Firenze<br>
-						tel. +39 055 3987682<br>
-						info@hwtconsulting.i<br>
-						</b>
-					</div>
-				</div>
-		</div>
+	</div>
+
 	</div>
 </body>
 </html>
