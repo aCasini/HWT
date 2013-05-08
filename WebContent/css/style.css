@@ -62,7 +62,9 @@ body {
 div#pop-up05 {
 	display: none;
 	position: absolute;
- 	width: 500px; 
+  left:-40px;
+  top:-25px;
+ 	width: 900px; 
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -98,7 +100,7 @@ div#mContent {
 div#pop-up04 {
 	display: none;
 	position: absolute;
-/* 	width: 500px; */
+ 	width: 500px; 
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -133,7 +135,8 @@ div#gContent {
 div#pop-up02 {
 	display: none;
 	position: absolute;
-/* 	width: 500px; */
+ 	width: 500px; 
+  top:70px;
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -167,7 +170,8 @@ div#sContent {
 div#pop-up03 {
 	display: none;
 	position: absolute;
-/* 	width: 500px; */
+ 	width: 500px; 
+  top:150px;
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -202,7 +206,9 @@ div#uContent {
 div#pop-up07 {
 	display: none;
 	position: absolute;
-/* 	width: 500px; */
+ 	width: 500px; 
+  top:110px;
+  left:-130px;
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -238,7 +244,9 @@ div#pop-up08 {
 /* 	text-align: right; */
 	display: none;
 	position: absolute;
-	width: 100px;
+	width: 500px;
+  left:-100px;
+  top:300px;
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -277,7 +285,9 @@ div#pop-up01 {
 /* 	text-align: right; */
 	display: none;
 	position: absolute;
-	width: 100px;
+	width: 200px;
+  left:-70px;
+  top: 200px;
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;
@@ -316,7 +326,8 @@ div#pop-up06 {
 /* 	text-align: right; */
 	display: none;
 	position: absolute;
-	width: 100px;
+	width: 200px;
+  left:-50px;
 /* 	height: 100px; */
 	color: #000000;
 	z-index: 2222;

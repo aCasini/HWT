@@ -9,11 +9,6 @@
 	padding: 0;
 }
 
-.inner-row {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #imgMapping {
 	padding-bottom: 15px;
 }
@@ -94,6 +89,7 @@
 	font-size: 50px;
 	font-weight: bolder;
 	color: #307ebc;
+  padding: 20px;
 }
 
 #contentPagKnowHow {
@@ -110,6 +106,7 @@
 	font-size: 50px;
 	font-weight: bolder;
 	color: #307ebc;
+  padding: 20px;
 }
 
 #contentPagStartUp {
@@ -166,70 +163,93 @@
 	font-size: small;
 	color: white;
 	line-height: 20px;
+    margin-bottom:10px;
+}
+@media (min-width: 1200px) {
+  #map-mini img{
+    border: 1px solid black;
+    display:none;
+  }
+  #map{
+    height: 280px;
+    border: 1px solid black;
+  }
 }
 
+@media (max-width: 1200px) {
+  #map-mini img{
+    border: 1px solid black;
+    margin-bottom:10px;
+  }
+  #map{
+    display:none;
+    height: 280px;
+  }
+}
+
+
+
 #greenCanvas {
-/* 	background-image: url('../img/footer/Box02.jpg'); */
-	/* fallback */
-	background-color: #c0d24c;
-	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7),
-		to(#2F2727));
-	/* Safari 5.1, Chrome 10+ */
-	background: -webkit-linear-gradient(top, #84b818, #c0d24c);
-	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(top, #84b818, #c0d24c);
-	/* IE 10 */
-	background: -ms-linear-gradient(top, #84b818, #c0d24c);
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(top, #84b818, #c0d24c);
-	font-family: helvetica;
-	line-height: 20px;
-	font-size: medium;
-	padding: 15px;
-	color: white;
-	margin-top: 280px;
-	text-align: center;
+  /* 	background-image: url('../img/footer/Box02.jpg'); */
+  /* fallback */
+  background-color: #c0d24c;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7),
+  to(#2F2727));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #84b818, #c0d24c);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #84b818, #c0d24c);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #84b818, #c0d24c);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #84b818, #c0d24c);
+  font-family: helvetica;
+  line-height: 20px;
+  font-size: medium;
+  padding: 15px;
+  color: white;
+  text-align: center;
 }
 
 #heroUnitFooter {
-	background-image: url('../img/footer/Map.jpg');
-	background-repeat: no-repeat;
+  background-image: url('../img/footer/Map.jpg');
+  background-repeat: no-repeat;
 }
 
 #heroUnitBM {
-	background-color: white;
+  background-color: white;
 }
 
 #heroUnitKS {
-	background-color: white;
+  background-color: white;
 }
 
 #heroUnitUX {
-	background-color: white;
+  background-color: white;
 }
 
 #heroUnitGame {
-	background-color: white;
+  background-color: white;
 }
 
 #rowImgBM {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #rowImgSU {
-	padding-bottom: 20px;
-	padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 #rowImgK {
-	padding: 20px;
+  padding: 20px;
 }
 
 #rowImgUX {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #rosImgStra {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }

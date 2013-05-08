@@ -156,7 +156,7 @@
         self._state = 'opening';
         return self;
     };
-//    CircleMenu.prototype.close = function(immediate){
+    CircleMenu.prototype.close = function(immediate){
 //    	alert("Chiusura");
 //        var self = this,
 //            $self = this.element,
@@ -195,7 +195,7 @@
 //            self._timeouts.push(setTimeout(do_animation,self.options.delay));
 //        }
 //        return this;
-//    };
+    };
     CircleMenu.prototype.select = function(index){
         var self = this,
             selected, set_other;
