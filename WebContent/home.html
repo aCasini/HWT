@@ -41,6 +41,7 @@
 			'transition_function' : 'linear',
 			direction : 'full'
 		});
+		$("#goTop").css('visibility', 'hidden');
 
 		$(window).scroll(function() {
 			if (!isOnTop)
@@ -158,7 +159,7 @@
 
 	function scrolling04() {
 		$('html, body').animate({
-			scrollTop : $('#hearoUnitGame').offset().top
+			scrollTop : $('#heroUnitGame').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
@@ -179,28 +180,28 @@
 	
 	function scrolling08() {
 		$('html, body').animate({
-			scrollTop : $('#hearoUnitKS').offset().top
+			scrollTop : $('#heroUnitKS').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling01() {
 		$('html, body').animate({
-			scrollTop : $('#hearoUnitKS').offset().top
+			scrollTop : $('#heroUnitKS').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
 	
 	function scrolling06() {
 		$('html, body').animate({
-			scrollTop : $('#hearoUnitBM').offset().top
+			scrollTop : $('#heroUnitBM').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
 
 	function scrolling07() {
 		$('html, body').animate({
-			scrollTop : $('#hearoUnitFooter').offset().top
+			scrollTop : $('#heroUnitFooter').offset().top
 		}, 1500);
 		isOnTop = false;
 	}
@@ -226,7 +227,7 @@
 	<div>
 		<!--  id="allContent" style="display: block;"> -->
 		<div id="containerHeader">
-			<div class="row">
+			<div class="row-fluid">
 				<div class="span1 offset11" style="padding: 2px; float: right;">
 					<table>
 						<tr>
@@ -243,11 +244,11 @@
 			<div class="row-fluid" style="position: fixed;">
 				<div class="span1 offset11" style="padding: 2px;>
 					<a href="#" onclick="goOnTop();" style="visibility: hidden;" id="goTop">
-						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_small.png">
+						<img title="Go on Top" alt="Go On Top" src="img/Icone/goTop_hwt.png">
 					</a>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row-fluid">
 				<div align="center" id="ex-timing" class="span12">
 					<ul>
 						<li class="centerItem" id="centerId">
@@ -389,43 +390,43 @@
 			</div>
 		</div>
 		<div id='main' role='main'>
-			<div class='container' id="containerBootstrap">
+			<div class='container-fluid' id="containerBootstrap">
 				<div class='content'>
 					<div class="hero-unit" id="heroMapping">
-						<div id="pagMapping" class="row">
-							<div class="span4">
-								<img id="imgMapping" alt="Mapping" src="img/titles/Mapping.png">
-								<div>
-									<img alt="" src="img/content/Mapping.png">
+						<div id="pagMapping" class="row-fluid">
+								<div class="span4">
+									<img id="imgMapping" alt="Mapping" src="img/titles/Mapping.png">
+									<div>
+										<img alt="" src="img/content/Mapping.png">
+									</div>
 								</div>
+								<div class="span8" id="contentPagMapping">Il Visual
+									Thinking rappresenta la pratica di usare le immagini per
+									comunicare in maniera chiara e intuitiva. Schizzi, disegni o
+									note su post-it, per esempio, possono essere utilizzati per
+									costruire e discutere un'idea o per risolvere problemi. Le
+									tecniche visuali permettono di "dare vita" alle questioni
+									legate al business, passando dall'astratto al concreto.
+									Credendo fortemente nel potere delle immagini, il Team di HWT
+									ha sviluppato un toolkit di strumenti visuali che si vano ad
+									aggiungere a quelli gi&agrave consolidati e presenti nello
+									scenario attuale, come il Business Mode Canvas, una mappa
+									concettuale (una sorta di "tela" da cui deriva il nome Canvas)
+									suddivisa in nove elementi base, che funziona attraverso dei
+									post-it, che diventano contenitori di idee e rappresentano un
+									mezzo per le discussioni di tipo strategico. Lo "schizzo"
+									&egrave il modo con cui visualizzare le idee, come suggerisce
+									Dam Roam nel libro "The Back of the Napking (2008).</div>
 							</div>
-							<div class="span8" id="contentPagMapping">Il Visual
-								Thinking rappresenta la pratica di usare le immagini per
-								comunicare in maniera chiara e intuitiva. Schizzi, disegni o
-								note su post-it, per esempio, possono essere utilizzati per
-								costruire e discutere un'idea o per risolvere problemi. Le
-								tecniche visuali permettono di "dare vita" alle questioni legate
-								al business, passando dall'astratto al concreto. Credendo
-								fortemente nel potere delle immagini, il Team di HWT ha
-								sviluppato un toolkit di strumenti visuali che si vano ad
-								aggiungere a quelli gi&agrave consolidati e presenti nello
-								scenario attuale, come il Business Mode Canvas, una mappa
-								concettuale (una sorta di "tela" da cui deriva il nome Canvas)
-								suddivisa in nove elementi base, che funziona attraverso dei
-								post-it, che diventano contenitori di idee e rappresentano un
-								mezzo per le discussioni di tipo strategico. Lo "schizzo"
-								&egrave il modo con cui visualizzare le idee, come suggerisce
-								Dam Roam nel libro "The Back of the Napking (2008).</div>
-						</div>
 					</div>
-					<div class="hero-unit" id="hearoUnitGame">
-						<div class="row" style="text-align: center;">
+					<div class="hero-unit" id="heroUnitGame">
+						<div class="row-fluid" style="text-align: center;">
 							<div class="span12">
 								<img alt="Gaming" src="img/titles/Gaminfication.png"
 									style="padding-bottom: 15px;">
 							</div>
 						</div>
-						<div id="pagGaming" class="row">
+						<div id="pagGaming" class="row-fluid">
 							<div class="span4">
 								<div>
 									<img alt="" src="img/content/Gamification_03.png">
@@ -452,13 +453,13 @@
 						</div>
 					</div>
 					<div class="hero-unit" id="heroStrategia">
-						<div class="row">
+						<div class="row-fluid">
 							<div class="span12" style="text-align: center;">
 								<img alt="Strategia" src="img/titles/Strategia.png"
 									id="rosImgStra">
 							</div>
 						</div>
-						<div id="pagStrategia" class="row">
+						<div id="pagStrategia" class="row-fluid">
 							<div class="span3">
 								<div>
 									<img alt="" src="img/content/Strategia_01.png">
@@ -497,12 +498,12 @@
 						</div>
 					</div>
 					<div class="hero-unit" id="heroUnitUX">
-						<div class="row">
+						<div class="row-fluid">
 							<div class="span6 offset2">
 								<img alt="User-Experience" src="img/titles/UX.png" id="rowImgUX">
 							</div>
 						</div>
-						<div id="pagUserExperience" class="row">
+						<div id="pagUserExperience" class="row-fluid">
 							<div class="span2">
 								<img alt="" src="img/content/Ux_01.png">
 							</div>
@@ -528,19 +529,19 @@
 							</div>
 						</div>
 					</div>
-					<div class="hero-unit" id="hearoUnitKS">
-						<div id="pagKnowStart" class="row">
-							<div id="pagKnowHow" class="span6">
-								<div class="row">
-									<div class="span6 offset2">
+					<div class="hero-unit" id="heroUnitKS">
+						<div id="pagKnowStart" class="row-fluid">
+							<div id="pagKnowHow" class="span5">
+								<div class="row-fluid">
+									<div class="span6 offset3">
 										<img alt="Know-How" src="img/titles/Knowhow.png" id="rowImgK">
 									</div>
 								</div>
-								<div class="row">
-									<div class="span2">
+								<div class="row-fluid">
+									<div class="span3">
 										<img alt="" src="img/content/Know-how_01.png">
 									</div>
-									<div id="contentPagKnowHow" class="span4">
+									<div id="contentPagKnowHow" class="span8">
 										<div>
 											Il valore di un'organizzazione non si misura esclusivamente
 											dalle risorse tangibili, ma risiede soprattutto nella
@@ -558,13 +559,13 @@
 								</div>
 							</div>
 							<div id="pagStartUp" class="span7">
-								<div class="row">
+								<div class="row-fluid">
 									<div class="span6 offset1">
 										<img alt="Start-Up" src="img/titles/Startup.png" id="rowImgSU">
 									</div>
 								</div>
-								<div class="row">
-									<div id="contentPagStartUp" class="span4 offset1">
+								<div class="row-fluid">
+									<div id="contentPagStartUp" class="span8 offset1">
 										<div>
 											La Start-up nasce da un'idea, ma affinch&egrave un'idea possa
 											essere trasformata in business ogni suo elemento deve essere
@@ -592,13 +593,13 @@
 						</div>
 					</div>
 
-					<div class="hero-unit" id="hearoUnitBM">
-						<div class="row">
+					<div class="hero-unit" id="heroUnitBM">
+						<div class="row-fluid">
 							<div class="span12" id="rowImgBM">
 								<img alt="Business-Model" src="img/titles/Business-model.png">
 							</div>
 						</div>
-						<div id="pagBusinessModel" class="row">
+						<div id="pagBusinessModel" class="row-fluid">
 							<div id="contentPagBusinessModel" class="span8">
 								Il Business Model racconta il funzionamento di
 								un'organizzazione. Convinti che ogni persona possa apportare
@@ -639,8 +640,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="hero-unit" id="hearoUnitFooter">
-						<div id="" class="row">
+					<div class="hero-unit" id="heroUnitFooter">
+						<div id="" class="row-fluid">
 							<div id="blueCanvas" class="span5 offset2">
 								HWT &egrave una start-up fondata nel 2013 da un team di giovani
 								legati dal- la convinzione che la vera sfida per le imprese
@@ -661,7 +662,7 @@
 								da Alexander Oserwalder e diffuso attraverso il libro di cui
 								egli stesso &egrave autore "Business Model Generation"
 							</div>
-							<div id="greenCanvas" class="span4">
+							<div id="greenCanvas" class="span4 offset1">
 								<b> Via F. D. Guerrazzi n&deg 1/N<br> 50132 - Firenze<br>
 									tel. +39 055 3987682<br> info@hwtconsulting.i<br>
 								</b>
@@ -670,6 +671,7 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
